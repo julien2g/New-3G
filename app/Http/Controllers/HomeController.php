@@ -12,33 +12,28 @@ class HomeController extends Controller
     public function Home()
     {
 
-        $cookie = $this->setCookie();
-        $news = News::orderBy('date', 'desc')->limit(10)->paginate(1);;
+
+        $news = News::orderBy('created_at', 'desc')->limit(10)->paginate(1);;
 
 
-        return view('welcome')->with('news', $news)->with('cookie', $cookie);
+        return view('welcome')->with('news', $news);
     }
 
 
-    public function setCookie()
-    {
-        $value = 'actif';
 
-        setcookie("modal", $value,time()+3600);
-       // echo $_COOKIE["modal"];
-        return $_COOKIE["modal"];
-    }
 
     public function email(Request $request){
 
 
-        echo $this->generateRandomString(5);
+        //echo $this->generateRandomString(5);
 
         $params = $request->except(['_token']);
 
         $user = User::firstOrCreate(['email' => $params['email'], 'password' => md5($this->generateRandomString(5))]);
 
         $user->save();
+
+        return $this->Home();
     }
 
 
@@ -52,6 +47,40 @@ class HomeController extends Controller
         }
         return $randomString;
     }
+
+
+    public function addNews(Request $request){
+        $params = $request->except(['_token']);
+
+
+        if ($params['id'] == '') // test if need add or modify
+        {
+
+            $news = new News();
+        }
+        else
+        {
+            $news = News::where('id', '=', $params['id'])->first();
+        }
+
+       $news->title = $params['title'];
+       $news->text = $params['text'];
+
+       $news->save();
+
+        return view('admin.admin')->with('success', 'TRUE');
+    }
+
+    public function getNews(){
+
+        $news = News::get();
+
+        return view('news.addNews')->with('news', $news);
+    }
+
+
+
+
 
 }
 

@@ -3,28 +3,7 @@
 @section('content')
     <h3 class="center">Actualités</h3>
     <div class="row">
-
         @foreach($news as $n)
-            {{--<div class="accordion col-3 center" id="accordionExample">
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                    data-target="#i{{$n->id}}" aria-expanded="false" aria-controls="i{{$n->id}}">
-                                <h5 class="blue">{{$n->title}}</h5>
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="i{{$n->id}}" class="collapse" aria-labelledby="headingTwo"
-                         data-parent="#accordionExample">
-                        <div class="card-body">
-                            <p class="text-muted">{{$n->date}}</p>
-                            <p>{{$n->text}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>--}}
-
             <div class="jumbotron col-12">
                 <h3>{{$n->title}}</h3>
 
@@ -32,14 +11,10 @@
                 <p>{{$n->text}}</p>
                 <p class="right">{{$n->date}}</p>
             </div>
-
-
         @endforeach
-
-
     </div>
 
-    <div class="center2">
+    <div class="blue">
         {{ $news->links() }}
 
     </div>

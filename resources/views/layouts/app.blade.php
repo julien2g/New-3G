@@ -172,7 +172,9 @@
 
                                     <input type="email" name="email" placeholder="Votre email">
 
+
                                 </th>
+                                <th><button type="submit" class="btn btn-primary">Confirm</button></th>
                                 <th>
                                     <a href="https://www.facebook.com/De-La-Legende-Asturienne-101469213959401/?hc_ref=ARTWt0l76u1D_TKFlhUpD-iyBtIpgjDGd_eqZqWML4dP3ohn8gvzWZ1cdN-KvVnP0KM&fref=nf"
                                        class="blue" title="Follow us on Facebook"> <i

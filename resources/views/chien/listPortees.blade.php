@@ -65,11 +65,11 @@
                             <br>
                             <div class="row">
                                 @foreach($chiots[$key] as $k=>$chiot)
-                                    <a href="{{route('details', ['id' => $chiot->id])}}">
-                                        <div class="col-3">
+                                    <div class="col-3">
+                                        <a href="{{route('details', ['id' => $chiot->id])}}">
                                             <div class="card">
                                                 @foreach($images_chiots as $img)
-                                                    @if($img->id_chien == $chiot->id)
+                                                    @if(isset($img) && $img->id_chien == $chiot->id)
                                                         <img src="/storage/chiens/{{$img->slug}}{{$img->ext}}"
                                                              class="card-img-top maxImg"
                                                              alt="{{$chiot->name}} de l'élevage de {{$chiot->race}} : De la légende asturienne"
@@ -87,7 +87,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                    </div>
                                     </a>
                                 @endforeach
                             </div>

@@ -169,7 +169,6 @@ class ChienController extends Controller
         $images = Image::where('id_chien', '=', $id)->get();
 
         $chiens_rdm = Chien::orderByRaw('RAND()')->take(4)->get();
-        //print_r($chiens[0]);
 
 
         foreach ($chiens_rdm as $c) {
@@ -199,8 +198,6 @@ class ChienController extends Controller
 
         }
 
-
-
         return view('chien.detailsChien')->with('chien', $chien[0])->with('images', $images)->with('chiens_rdm', $chiens_rdm)->with('images_rdm', $images_rdm)->with('title', $title);
     }
 
@@ -208,28 +205,70 @@ class ChienController extends Controller
     {
 
 
-        $chien = new Chien();
+
 
         $params = $request->except(['_token']);
 
-        print_r($params);
+        if ($params['id'] == '') // test if need add or modify
+        {
+
+            $chien = new Chien();
+        }
+        else
+        {
+            $chien = Chien::where('id', '=', $params['id'])->first();
+        }
+
 
 
         $chien->name = $params['name'];
         $chien->title = $params['title'];
         $chien->adult = $params['adult'];
-        $chien->owner = 0;//$params['owner'];
-        $chien->own = 0;//$params['own'];
+        $chien->owner =  $params['owner'];
+        $chien->own = $params['own'];
         $chien->race = $params['race'];
         $chien->info = $params['info'];
         $chien->awards = $params['award'];
+        $chien->expositions = $params['exposition'];
+        $chien->analyses = $params['analyse'];
         $chien->sex = $params['sex'];
-        $chien->birthday = '2019-05-03';
+        $chien->id_portee = $params['portee'];
+        $chien->birthday = $params['birthday'];
+
 
         $chien->save();
 
 
+        return view('admin.admin')->with('success', 'TRUE');
+
     }
 
+
+    public function modifyChien(Request $request){
+
+        $params = $request->except(['_token']);
+
+
+        $chien = Chien::where('id', '=', $params['id'])->first();
+        if ($request->isMethod('post')) {
+            $chien->name = $params['name'];
+            $chien->title = $params['title'];
+            $chien->adult = $params['adult'];
+            $chien->owner =  $params['owner'];
+            $chien->own = $params['own'];
+            $chien->race = $params['race'];
+            $chien->info = $params['info'];
+            $chien->awards = $params['award'];
+            $chien->expositions = $params['exposition'];
+            $chien->analyses = $params['analyse'];
+            $chien->sex = $params['sex'];
+            $chien->id_portee = $params['portee'];
+            $chien->birthday = $params['birthday'];
+
+            $chien->save();
+        }
+
+        //print_r($chien);
+}
 
 }

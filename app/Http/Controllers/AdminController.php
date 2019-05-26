@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Album;
 use App\Chien;
 use App\News;
 use App\Portee;
@@ -56,7 +57,7 @@ class AdminController extends Controller
     }
 
     public function addNews(){
-        return view('news.addNews');
+        return view('admin.addNews');
     }
 
     public function getNewsFilled(Request $request){
@@ -68,7 +69,23 @@ class AdminController extends Controller
 
 
 
-        return view('news.addNews')->with('new', $new);
+        return view('admin.addNews')->with('new', $new);
+    }
+
+    public function addAlbum(){
+        return view('admin.addAlbum');
+    }
+
+    public function getAlbumFilled(Request $request){
+
+
+
+        $id = $request['id'];
+        $album = Album::where('id', '=', $id)->first();
+
+
+
+        return view('admin.addAlbum')->with('album', $album);
     }
 
 }

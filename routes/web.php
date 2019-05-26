@@ -148,6 +148,33 @@ Route::post('/admin/modify/chien', [
 ]);
 
 
+// ALBUM ROUTE
+Route::get('/admin/add/album/vue', [
+    'as' => 'admin/add/album/vue',
+    'uses' => 'AdminController@addAlbum'
+]);
+Route::get('/admin/modify/album/vue', [
+    'as' => 'admin/modify/album/vue',
+    'uses' => 'AlbumController@getAlbum'
+]);
+
+Route::get('/admin/modify/album/vue/filled', [
+    'as' => 'admin/modify/album/vue/filled',
+    'uses' => 'AdminController@getAlbumFilled'
+]);
+
+Route::post('/admin/add/album', [
+    'as' => 'admin/add/album',
+    'uses' => 'AlbumController@addAlbum'
+]);
+
+// UPLOAD
+Route::post('/upload/image/', [
+    'as' => 'upload/image',
+    'uses' => 'UploadController@uplaod'
+]);
+
+
 
 
 

@@ -35,4 +35,34 @@ class AlbumController extends Controller
         return view('album.detailAlbum')->with('album', $album)->with('images', $images);
     }
 
+
+    public function addAlbum(Request $request){
+        $params = $request->except(['_token']);
+
+
+        if ($params['id'] == '') // test if need add or modify
+        {
+
+            $album = new Album();
+        }
+        else
+        {
+            $album = Album::where('id', '=', $params['id'])->first();
+        }
+
+        $album->name = $params['name'];
+        $album->info = $params['info'];
+
+        $album->save();
+
+        return view('admin.admin')->with('success', 'TRUE');
+    }
+
+    public function getAlbum(){
+
+        $albums = Album::get();
+
+        return view('admin.addAlbum')->with('albums', $albums);
+    }
+
 }

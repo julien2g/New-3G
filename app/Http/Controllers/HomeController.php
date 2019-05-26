@@ -75,7 +75,7 @@ class HomeController extends Controller
 
         $news = News::get();
 
-        return view('news.addNews')->with('news', $news);
+        return view('admin.addNews')->with('news', $news);
     }
 
 

@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="form-group col-3">
                         <label for="title">Titre</label>
-                        <input type="title" class="form-control" id="title" name="title" placeholder="Titre"
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Titre"
                                value="{{isset($new) ? $new->title : ''}}">
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                     {{isset($new) ? $new->text : ''}}
                 </textarea>
                     </div>
-                </div>{{isset($new) ? $new->id : 'NULL'}}
+                </div>
 
                 <input type="hidden" name="id" value="{{isset($new) ? $new->id : ''}}">
                 <div class="row">

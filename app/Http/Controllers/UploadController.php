@@ -14,19 +14,50 @@ class UploadController extends Controller
 
         $params = $request->except(['_token']);
 
+        foreach ($params['image'] as $img) { // For each img upload
+            $slug = $this->generateRandomString(5); // Give name
+
+            $img->storeAs('/public/' . $params['folder'], $slug . '.' . $img->getClientOriginalExtension()); // Store imgWith the name "Slug"
+
+            echo '<br>';
 
 
+            if ($params['folder'] == 'albums') { // if albums folder
+
+                $imagesPos = ImageAlbum::where('id_album', '=', $params['id'])->orderBy('pos', 'desc')->first();
+
+
+
+
+                $image_album = new ImageAlbum();
+
+                $image_album->id_album = $params['id'];
+                $image_album->slug = $slug;
+                $image_album->pos = $imagesPos['pos']  + 1 ;
+                $image_album->ext = '.' . $img->getClientOriginalExtension();
+
+
+                $image_album->save(); // Save the img entry in bdd
+
+            } elseif ($params['folder'] == 'chien') {
+
+            }
+
+            echo $image_album;
+            echo '<br>';
+        }
+        die;
 
 
         /*
-                print_r($params);
+
 
                 echo '<br>';
                 echo '<br>';
                 echo '<br>';
                 echo '<br>';
 
-                echo $params['id'];*/
+                echo $params['id'];
 
 
         $slug = $this->generateRandomString(5);
@@ -54,7 +85,7 @@ class UploadController extends Controller
 
         }
 
-        return $image_album;
+        return $image_album;*/
         /*if (request()->hasFile('images')) {
             $path = $request->file('images')->store('avatars');
 
@@ -93,8 +124,8 @@ class UploadController extends Controller
     }
 
 
-
-    public function generateRandomString($length) {
+    public function generateRandomString($length)
+    {
         $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
         $randomString = '';

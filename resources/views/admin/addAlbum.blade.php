@@ -60,7 +60,7 @@
 
           <form role="form" method="post" action="{{route('upload/image')}}" enctype="multipart/form-data">
            @csrf <!-- {{ csrf_field() }} -->
-               <input type="file" name="image" multiple="multiple">
+               <input type="file" name="image[]" multiple="multiple">
                <input type="hidden" name="folder" value="albums">
                <input type="hidden" name="id" value="{{isset($album) ? $album->id : ''}}">
                <button type="submit" data-buttonText="Browse">Uplaod </button>

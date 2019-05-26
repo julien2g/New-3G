@@ -132,10 +132,16 @@ Route::get('/modify/chien/vue', [
     'uses' => 'AdminController@modifyChien'
 ]);
 
-Route::get('/find/chien', [
+/*Route::get('/find/chien', [
     'as' => 'find/chien',
     'uses' => 'AdminController@getChienFilled'
+]);*/
+Route::get('/admin/modify/chiens/vue/filled', [
+    'as' => 'admin/modify/chiens/vue/filled',
+    'uses' => 'AdminController@getChienFilled'
 ]);
+
+
 
 Route::post('/admin/add/chien', [
     'as' => 'admin/add/chien',
@@ -158,8 +164,8 @@ Route::get('/admin/modify/album/vue', [
     'uses' => 'AlbumController@getAlbum'
 ]);
 
-Route::get('/admin/modify/album/vue/filled', [
-    'as' => 'admin/modify/album/vue/filled',
+Route::get('/admin/modify/albums/vue/filled', [
+    'as' => 'admin/modify/albums/vue/filled',
     'uses' => 'AdminController@getAlbumFilled'
 ]);
 
@@ -173,6 +179,12 @@ Route::post('/upload/image/', [
     'as' => 'upload/image',
     'uses' => 'UploadController@uplaod'
 ]);
+
+Route::get('/delete/image/{folder}/{id_folder}/{id_image}/{slug}', [
+    'as' => 'delete/image',
+    'uses' => 'UploadController@delete'
+]);
+
 
 
 

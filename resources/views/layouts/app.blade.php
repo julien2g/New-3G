@@ -36,15 +36,13 @@
 <div class="container">
     <div class="container">
         <div class="row">
-            <div class="col-4 center">
-            </div>
-            <div class="col-4 center">
+            <div class="col-4 offset-md-4 center">
                 <a href="/">
-                    <img src="{{url('/storage/img/logo.png')}}" class="logoHeader"
+                    <img src="{{url('/storage/img/logo.png')}}" class="logoHeader embed-responsive"
                          alt="Logo de  l'élevage de berger autralien : la legende asturienne"
                          title="Le joli berger autralien de la legende asturienne qui surveille"/></a>
             </div>
-            <div class="col-4 right">
+            <div class="col-4  right">
                 <a href="{{route('admin')}}"> Social media</a>
                 <a href="https://www.facebook.com/De-La-Legende-Asturienne-101469213959401/?hc_ref=ARTWt0l76u1D_TKFlhUpD-iyBtIpgjDGd_eqZqWML4dP3ohn8gvzWZ1cdN-KvVnP0KM&fref=nf"
                    class="blue" title="Follow us on Facebook"> <i class="fab fa-facebook-square fa-2x"></i></a>
@@ -160,7 +158,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="offset-7 col-5 right">
+
+                <div class="offset-lg-7 col-5 right">
                     <form role="form" method="post" action="{{ route('email') }}">
                     @csrf <!-- {{ csrf_field() }} -->
                         <table>
@@ -170,11 +169,11 @@
                             <tr>
                                 <th>
 
-                                    <input type="email" name="email" placeholder="Votre email">
+                                    <input class="col-sm-10" type="email" name="email" placeholder="Votre email">
 
 
                                 </th>
-                                <th><button type="submit" class="btn btn-primary">Confirm</button></th>
+                                <th><button type="submit" class="btn btn-sm btn-primary">Confirm</button></th>
                                 <th>
                                     <a href="https://www.facebook.com/De-La-Legende-Asturienne-101469213959401/?hc_ref=ARTWt0l76u1D_TKFlhUpD-iyBtIpgjDGd_eqZqWML4dP3ohn8gvzWZ1cdN-KvVnP0KM&fref=nf"
                                        class="blue" title="Follow us on Facebook"> <i

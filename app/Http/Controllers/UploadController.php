@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Album;
 use App\Http\Requests\UploadRequest;
+use App\Image;
 use App\ImageAlbum;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 
 class UploadController extends Controller
@@ -19,108 +22,60 @@ class UploadController extends Controller
 
             $img->storeAs('/public/' . $params['folder'], $slug . '.' . $img->getClientOriginalExtension()); // Store imgWith the name "Slug"
 
-            echo '<br>';
+
+            if ($params['folder'] == 'albums') { // if albums folder // /////:///////// //////////////////// NEED VERIFY IF POS = 1
+
+                $imagesPos = ImageAlbum::where('id_album', '=', $params['id'])->orderBy('pos', 'desc')->first(); // To take the last position
+
+                $image = new ImageAlbum();
+
+                $image->id_album = $params['id'];
+                $image->slug = $slug;
+                $image->pos = $imagesPos['pos'] + 1;
+                $image->ext = '.' . $img->getClientOriginalExtension();
 
 
-            if ($params['folder'] == 'albums') { // if albums folder
+            } elseif ($params['folder'] == 'chiens') {
+                // if (Image::where('id_chien', '=', $params['id'])->orderBy('pos', 'asc')->first() == 1) {
+                $imagesPos = Image::where('id_chien', '=', $params['id'])->orderBy('pos', 'desc')->first(); // To take the last position
+                //} else {
+                //  $imagesPos = 0;
 
-                $imagesPos = ImageAlbum::where('id_album', '=', $params['id'])->orderBy('pos', 'desc')->first();
+                //}
 
+                $image = new Image();
 
-
-
-                $image_album = new ImageAlbum();
-
-                $image_album->id_album = $params['id'];
-                $image_album->slug = $slug;
-                $image_album->pos = $imagesPos['pos']  + 1 ;
-                $image_album->ext = '.' . $img->getClientOriginalExtension();
-
-
-                $image_album->save(); // Save the img entry in bdd
-
-            } elseif ($params['folder'] == 'chien') {
-
+                $image->id_chien = $params['id'];
+                $image->slug = $slug;
+                $image->pos = $imagesPos['pos'] + 1;
+                $image->ext = '.' . $img->getClientOriginalExtension();
             }
 
-            echo $image_album;
-            echo '<br>';
-        }
-        die;
-
-
-        /*
-
-
-                echo '<br>';
-                echo '<br>';
-                echo '<br>';
-                echo '<br>';
-
-                echo $params['id'];
-
-
-        $slug = $this->generateRandomString(5);
-
-        $request->file('image')->storeAs('/public/' . $params['folder'], $slug . '.' . $request->file('image')->getClientOriginalExtension());
-
-
-        //echo 'File Extension: '.$request->file('image')->getClientOriginalExtension();
-        echo '<br>';
-
-
-        if ($params['folder'] == 'albums') {
-            $image_album = new ImageAlbum();
-
-            $image_album->id_album = $params['id'];
-            $image_album->slug = $slug;
-            $image_album->pos = $params['id'];
-            $image_album->ext = '.' . $request->file('image')->getClientOriginalExtension();
-
-
-            $image_album->save();
-
-        }elseif ($params['folder'] == 'chien')
-        {
+            $image->save(); // Save the img entry in bdd
 
         }
 
-        return $image_album;*/
-        /*if (request()->hasFile('images')) {
-            $path = $request->file('images')->store('avatars');
+        return redirect('admin/modify/' . $params['folder'] . '/vue/filled?id=' . $params['id']);
 
-            echo $path;
-            die;
+    }
+
+    public function delete($folder, $id_album, $idImage, $slug)
+    {
+
+        if ($folder == 'albums') { // if albums folder
+
+            ImageAlbum::destroy($idImage);
+
+        } elseif ($folder == 'chiens') {
+
+            Image::destroy($idImage);
+
         }
-        else{
-            echo'no';
-        }
-        /*$file = $request->file('image');
 
-        //Display File Name
-        echo 'File Name: '.$file->getClientOriginalName();
-        echo '<br>';
+        Storage::delete('/public/' . $folder . '/' . $slug);
 
-        //Display File Extension
-        echo 'File Extension: '.$file->getClientOriginalExtension();
-        echo '<br>';
 
-        //Display File Real Path
-        echo 'File Real Path: '.$file->getRealPath();
-        echo '<br>';
-
-        //Display File Size
-        echo 'File Size: '.$file->getSize();
-        echo '<br>';
-
-        //Display File Mime Type
-        echo 'File Mime Type: '.$file->getMimeType();
-
-        //Move Uploaded File
-        $destinationPath = 'uploads';
-        $file->move($destinationPath,$file->getClientOriginalName());
-*/
-
+        return redirect('admin/modify/' . $folder . '/vue/filled?id=' . $id_album);
     }
 
 

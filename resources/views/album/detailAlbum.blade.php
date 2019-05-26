@@ -65,7 +65,7 @@
                                 <div class="carousel-item active">
                                     <a data-toggle="modal" data-target=".bd-example-modal-xl">
                                         <img
-                                            src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                            src="/storage/albums/{{$image->slug}}{{$image->ext}}"
                                             class="d-block w-100"
                                             alt="Elevage de berger australien : De la légende asturienne"
                                             title="Elevage de berger australien : De la légende asturienne">
@@ -74,7 +74,7 @@
                             @else
                                 <div class="carousel-item">
                                     <a data-toggle="modal" data-target=".bd-example-modal-xl">
-                                        <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                        <img src="/storage/albums/{{$image->slug}}{{$image->ext}}"
                                              class="d-block w-100"
                                              alt="élevage de berger australien : De la légende asturienne"
                                              title="élevage de berger australien : De la légende asturienne">

@@ -49,6 +49,10 @@ footer {
     max-width: 500px;
     max-height: 400px;
 }
+.maxImgAdmin {
+    max-width: 150px;
+    max-height: 150px;
+}
 
 .minCard{
     min-height: 550px;
@@ -81,7 +85,7 @@ p,a, li{
 
 
 
-
+/*
 
 
 
@@ -95,7 +99,7 @@ p,a, li{
 
 
 .img-replace {
-    /* replace text with an image */
+    !* replace text with an image *!
     display: inline-block;
     overflow: hidden;
     text-indent: 100%;
@@ -137,7 +141,7 @@ p,a, li{
     -ms-transform: translateY(-40px);
     -o-transform: translateY(-40px);
     transform: translateY(-40px);
-    /* Force Hardware Acceleration in WebKit */
+    !* Force Hardware Acceleration in WebKit *!
     -webkit-backface-visibility: hidden;
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
@@ -165,7 +169,6 @@ p,a, li{
     text-decoration: none;
     text-transform: uppercase;
 }
-
 
 
 
@@ -215,3 +218,4 @@ p,a, li{
         margin: 8em auto;
     }
 }
+*/

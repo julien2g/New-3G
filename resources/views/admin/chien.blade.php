@@ -3,7 +3,7 @@
 @section('content')
 
     @if(isset($chiens))
-        <form role="form" method="get" action="{{ route('find/chien') }}">
+        <form role="form" method="get" action="{{ route('admin/modify/chiens/vue/filled') }}">
             <div class="row center">
                 <div class="col-5 offset-4">
                     <label for="id">Choisir le chien à modifier</label>
@@ -22,6 +22,14 @@
         <br>
         <br>
     @else
+
+        @if(isset($chien))
+            <div class="row center">
+                <div class="alert alert-success col-12" role="alert">
+                    <a href="/details/{{$chien->id}}" class="alert-link">Liens du chien</a>
+                </div>
+            </div>
+        @endif
         <form role="form" method="post"
               action="{{isset($chien) ? route('admin/modify/chien') : route('admin/add/chien')  }}">
         @csrf <!-- {{ csrf_field() }} -->
@@ -143,8 +151,52 @@
 
             </div>
             <input type="hidden" name="id" value=" {{isset($chien) ? $chien->id : ''}}">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Entrer</button>
         </form>
     @endif
+    @if(isset($chien))
+        <div class="form-group col-12">
+            <form role="form" method="post" action="{{route('upload/image')}}"
+                  enctype="multipart/form-data">
+            @csrf <!-- {{ csrf_field() }} -->
+                <input type="file" name="image[]" multiple="multiple">
+                <input type="hidden" name="folder" value="chiens">
+                <input type="hidden" name="id" value="{{isset($chien) ? $chien->id : ''}}">
+                <button type="submit" class="btn btn-primary" data-buttonText="Browse">Uplaod</button>
+            </form>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card-group">
+                    <div class="row">
+                    @foreach ($images as $image)
+
+                        <div class="card col-2">
+                            <img class="maxImgAdmin embed-responsive" src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                 alt="Album : {{$chien->name}}">
+                            <div class="card-body center">
+                                {{--<input name="pos"  class="col-1" value="{{$image->pos}}">--}}
+                                @if($image->pos != 1)
+                                <a href="{{route('delete/image', ['folder' => 'chiens', 'id_folder' => $chien->id, 'id_image' => $image->id, 'slug' => $image->slug . '' . $image->ext])}}"
+                                   title="Suprimer l'image">
+                                    <button class="btn btn-danger btn-sm">X</button>
+                                </a>
+@endif
+                            </div>
+                        </div>
+                    @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endif
+
+
+
+
+
 @endsection
 

@@ -12,9 +12,7 @@ class HomeController extends Controller
     public function Home()
     {
 
-
-        $news = News::orderBy('created_at', 'desc')->limit(10)->paginate(1);;
-
+        $news = News::orderBy('created_at', 'desc')->limit(5)->paginate(2);;
 
         return view('welcome')->with('news', $news);
     }

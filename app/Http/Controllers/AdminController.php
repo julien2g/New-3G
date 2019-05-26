@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Album;
 use App\Chien;
+use App\Image;
+use App\ImageAlbum;
 use App\News;
 use App\Portee;
 use Illuminate\Http\Request;
@@ -40,20 +42,13 @@ class AdminController extends Controller
     }
 
     public function getChienFilled(Request $request){
-
-
-
         $id = $request['id'];
-
-
 
         $chien = Chien::where('id', '=', $id)->first();
 
+        $images = Image::where('id_chien', '=', $id)->get();
 
-        echo $chien->name;
-
-
-        return view('admin.chien')->with('chien', $chien);
+        return view('admin.chien')->with('chien', $chien)->with('images', $images);
     }
 
     public function addNews(){
@@ -61,13 +56,8 @@ class AdminController extends Controller
     }
 
     public function getNewsFilled(Request $request){
-
-
-
         $id = $request['id'];
         $new = News::where('id', '=', $id)->first();
-
-
 
         return view('admin.addNews')->with('new', $new);
     }
@@ -77,15 +67,13 @@ class AdminController extends Controller
     }
 
     public function getAlbumFilled(Request $request){
-
-
-
         $id = $request['id'];
         $album = Album::where('id', '=', $id)->first();
 
+        $images = ImageAlbum::where('id_album', '=', $id)->get();
 
 
-        return view('admin.addAlbum')->with('album', $album);
+        return view('admin.addAlbum')->with('album', $album)->with('images', $images);
     }
 
 }

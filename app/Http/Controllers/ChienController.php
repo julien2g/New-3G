@@ -151,12 +151,7 @@ class ChienController extends Controller
 
             array_push($chiots, $enfants);
 
-
         }
-
-        //print_r($images_chiots);
-        //print_r($images_chiots[0][1]->slug);
-
 
         return view('chien.listPortees')->with('portees', $portees)->with('parents', $parents)->with('images', $images)->with('chiots', $chiots)->with('images_chiots', $images_chiots);
     }
@@ -178,10 +173,8 @@ class ChienController extends Controller
             array_push($images_rdm, $img);
         }
 
-
         if ($chien[0]->id_portee){
             $portee = Portee::where('id', '=', $chien[0]->id_portee)->get();
-
 
 
             $dad = Chien::where('id', '=', $portee[0]->id_dad)->first();
@@ -195,7 +188,6 @@ class ChienController extends Controller
             $parents_images = [$dad_img,  $mom_img];
             return view('chien.detailsChien')->with('chien', $chien[0])->with('images', $images)->with('chiens_rdm', $chiens_rdm)->with('images_rdm', $images_rdm)->with('title', $title)->with('parents', $parents)->with('parents_image', $parents_images);
 
-
         }
 
         return view('chien.detailsChien')->with('chien', $chien[0])->with('images', $images)->with('chiens_rdm', $chiens_rdm)->with('images_rdm', $images_rdm)->with('title', $title);
@@ -204,22 +196,16 @@ class ChienController extends Controller
     public function addChien(Request $request)
     {
 
-
-
-
         $params = $request->except(['_token']);
 
         if ($params['id'] == '') // test if need add or modify
         {
-
             $chien = new Chien();
         }
         else
         {
             $chien = Chien::where('id', '=', $params['id'])->first();
         }
-
-
 
         $chien->name = $params['name'];
         $chien->title = $params['title'];
@@ -235,16 +221,14 @@ class ChienController extends Controller
         $chien->id_portee = $params['portee'];
         $chien->birthday = $params['birthday'];
 
-
         $chien->save();
-
 
         return view('admin.admin')->with('success', 'TRUE');
 
     }
 
 
-    public function modifyChien(Request $request){
+   /* public function modifyChien(Request $request){
 
         $params = $request->except(['_token']);
 
@@ -269,6 +253,6 @@ class ChienController extends Controller
         }
 
         //print_r($chien);
-}
+}*/
 
 }

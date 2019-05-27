@@ -14,7 +14,7 @@
         @endforeach
     </div>
 
-    <div class="blue">
+    <div>
         {{ $news->links() }}
 
     </div>
@@ -25,7 +25,7 @@
             <h1 class="page-header center">Les premiers <strong>Bergers Australiens</strong> qui nous ont donné envie de
                 devenir <strong>éleveurs canins</strong>.</h1>
         </div>
-        <div class="col-6 col-sm-12">
+        <div class="col-md-6 col-sm-12">
             <p>C’est grâce à ces trois grosses boules de poils que nous avons eu envie de partager notre amour pour les
                 <strong>Bergers Australiens</strong>.</p>
 
@@ -41,12 +41,12 @@
                 chaque couleur).</p>
         </div>
 
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
             <img class="img-thumbnail embed-responsive" src="{{url('/storage/img/Les3.png')}}"
                  alt="Elevage de chiens berger Australien Sud" title="Elevage de chiens berger Australien">
 
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     </div>
     <hr>
 

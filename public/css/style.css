@@ -30,7 +30,7 @@ footer {
 }
 
 .center {
-    text-align: center
+    text-align: center;
 }
 
 .right {
@@ -81,6 +81,15 @@ p,a, li{
 }
 .logoHeader{
     max-width: 200px;
+}
+
+.pagination {
+    display: block !important;
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-block !important;
 }
 
 

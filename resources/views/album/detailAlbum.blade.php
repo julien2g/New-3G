@@ -35,9 +35,9 @@
         @endforeach
 
     </div>
-
+<div class="">
     {{$images->links()}}
-
+</div>
 
 
 
@@ -50,29 +50,13 @@
                 <div id="carouselExampleIndicator" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @foreach($images as $image)
-                            @if($image->pos == 1)
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                    class="active"></li>
-                            @else
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-                            @endif
-
+                                    @if($image->pos == 1) class="active" @endif></li>
                         @endforeach
                     </ol>
                     <div class="carousel-inner">
                         @foreach($images as $image)
-                            @if($image->pos == 1)
-                                <div class="carousel-item active">
-                                    <a data-toggle="modal" data-target=".bd-example-modal-xl">
-                                        <img
-                                            src="/storage/albums/{{$image->slug}}{{$image->ext}}"
-                                            class="d-block w-100"
-                                            alt="Elevage de berger australien : De la légende asturienne"
-                                            title="Elevage de berger australien : De la légende asturienne">
-                                    </a>
-                                </div>
-                            @else
-                                <div class="carousel-item">
+                                <div class="carousel-item @if($image->pos == 1) active @endif">
                                     <a data-toggle="modal" data-target=".bd-example-modal-xl">
                                         <img src="/storage/albums/{{$image->slug}}{{$image->ext}}"
                                              class="d-block w-100"
@@ -80,8 +64,6 @@
                                              title="élevage de berger australien : De la légende asturienne">
                                     </a>
                                 </div>
-                            @endif
-
                         @endforeach
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicator" role="button"

@@ -69,11 +69,12 @@
                                          alt="Album : {{$album->name}}">
                                     <div class="card-body center">
                                         {{--<input name="pos"  class="col-1" value="{{$image->pos}}">--}}
+                                        @if($image->pos != 1)
                                         <a href="{{route('delete/image', ['folder' => 'albums', 'id_folder' => $album->id, 'id_image' => $image->id, 'slug' => $image->slug . '' . $image->ext])}}"
                                            title="Suprimer l'image">
                                             <button class="btn btn-danger">X</button>
                                         </a>
-
+@endif
                                     </div>
                                 </div>
                             @endforeach

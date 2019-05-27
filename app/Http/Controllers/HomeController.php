@@ -75,10 +75,4 @@ class HomeController extends Controller
 
         return view('admin.addNews')->with('news', $news);
     }
-
-
-
-
-
 }
-

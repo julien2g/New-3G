@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Chien;
 use App\Image;
 use App\Portee;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class ChienController extends Controller
@@ -89,7 +90,7 @@ class ChienController extends Controller
         $images = [];
 
 
-        $portees = Portee::get();
+        $portees = Portee::where('birth_date', '>', Carbon::now())->get();
 
 
         foreach ($portees as $portee) {
@@ -120,7 +121,8 @@ class ChienController extends Controller
         $images_chiots = [];
 
 
-        $portees = Portee::get();
+        $portees = Portee::where('birth_date', '<', Carbon::now())->get();
+
 
 
         foreach ($portees as $portee) {
@@ -224,6 +226,32 @@ class ChienController extends Controller
         $chien->save();
 
         return view('admin.admin')->with('success', 'TRUE');
+
+    }
+
+    public function addPortee(Request $request){
+
+        $params = $request->except(['_token']);
+
+        if ($params['id'] == '') // test if need add or modify
+        {
+            $portee = new Portee();
+        }
+        else
+        {
+            $portee = Portee::where('id', '=', $params['id'])->first();
+        }
+
+        $portee->id_dad = $params['dad'];
+        $portee->id_mom = $params['mom'];
+
+        $portee->sex_date = $params['sex'];
+        $portee->infos = $params['infos'];
+
+        $portee->birth_date = $params['birth'];
+
+        $portee->save();
+
 
     }
 

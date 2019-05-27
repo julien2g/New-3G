@@ -83,7 +83,7 @@
     <br>
 
     <div class="row">
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
             <div class="card">
                 <div class="card-header">
                     <div class="center">
@@ -97,7 +97,7 @@
             </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
             <h4 class="text-muted center">{{$chien->title}} </h4>
             <div class="card text-center">
                 <div class="card-header">

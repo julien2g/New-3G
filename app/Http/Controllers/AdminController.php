@@ -55,6 +55,7 @@ class AdminController extends Controller
         return view('admin.addNews');
     }
 
+
     public function getNewsFilled(Request $request){
         $id = $request['id'];
         $new = News::where('id', '=', $id)->first();
@@ -74,6 +75,14 @@ class AdminController extends Controller
 
 
         return view('admin.addAlbum')->with('album', $album)->with('images', $images);
+    }
+
+    public function addPortee(){
+        $dad = Chien::where('sex', '=', 1)->get();
+        $mom = Chien::where('sex', '=', 0)->get();
+
+
+        return view('admin.addPortee')->with('dad', $dad)->with('mom', $mom);
     }
 
 }

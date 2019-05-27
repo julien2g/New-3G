@@ -36,14 +36,16 @@
 <div class="container">
     <div class="container">
         <div class="row">
-            <div class="col-4 offset-md-4 center">
+            <div class="col-4 offset-md-5 center">
                 <a href="/">
                     <img src="{{url('/storage/img/logo.png')}}" class="logoHeader embed-responsive"
                          alt="Logo de  l'élevage de berger autralien : la legende asturienne"
                          title="Le joli berger autralien de la legende asturienne qui surveille"/></a>
             </div>
-            <div class="col-4  right">
+            <div class="col-3  right">
+                @if (auth()->check())
                 <a href="{{route('admin')}}"> Social media</a>
+                @endif
                 <a href="https://www.facebook.com/De-La-Legende-Asturienne-101469213959401/?hc_ref=ARTWt0l76u1D_TKFlhUpD-iyBtIpgjDGd_eqZqWML4dP3ohn8gvzWZ1cdN-KvVnP0KM&fref=nf"
                    class="blue" title="Follow us on Facebook"> <i class="fab fa-facebook-square fa-2x"></i></a>
                 <br> <a href="https://www.instagram.com/delalegendeasturienne/" class="blue"
@@ -72,9 +74,17 @@
                    aria-expanded="false">Chiots</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="{{route('chiot', ['own' => "1"])}}">Chiots disponible </a>
-                    <a class="dropdown-item" href="{{route('futures/portees')}}">Futures portées</a>
+
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="{{route('chiot', ['own' => "0"])}}">Chiots nés chez nous</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false">Portées</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{{route('futures/portees')}}">Futures portées</a>
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="{{route('anciennes/portees')}}">Anciennes portées</a>
                 </div>
             </li>

@@ -36,13 +36,13 @@
 <div class="container">
     <div class="container">
         <div class="row">
-            <div class="col-4 offset-md-5 center">
+            <div class="offset-md-5 col-md-4 col-sm-6  center">
                 <a href="/">
                     <img src="{{url('/storage/img/logo.png')}}" class="logoHeader embed-responsive"
                          alt="Logo de  l'élevage de berger autralien : la legende asturienne"
                          title="Le joli berger autralien de la legende asturienne qui surveille"/></a>
             </div>
-            <div class="col-3  right">
+            <div class="col-md-3 col-sm-1  right">
                 @if (auth()->check())
                 <a href="{{route('admin')}}"> Social media</a>
                 @endif
@@ -167,9 +167,9 @@
 
                 </div>
             </div>
-            <div class="row">
 
-                <div class="offset-lg-7 col-5 right">
+            <div class="row">
+                <div class="offset-md-5 col-md-8 right">
                     <form role="form" method="post" action="{{ route('email') }}">
                     @csrf <!-- {{ csrf_field() }} -->
                         <table>
@@ -179,7 +179,7 @@
                             <tr>
                                 <th>
 
-                                    <input class="col-sm-10" type="email" name="email" placeholder="Votre email">
+                                    <input class="col-sm-12" type="email" name="email" placeholder="Votre email">
 
 
                                 </th>

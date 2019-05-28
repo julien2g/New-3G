@@ -124,7 +124,6 @@ class ChienController extends Controller
         $portees = Portee::where('birth_date', '<', Carbon::now())->get();
 
 
-
         foreach ($portees as $portee) {
 
             $dad = Chien::where('id', '=', $portee->id_dad)->get();
@@ -254,33 +253,5 @@ class ChienController extends Controller
 
 
     }
-
-
-   /* public function modifyChien(Request $request){
-
-        $params = $request->except(['_token']);
-
-
-        $chien = Chien::where('id', '=', $params['id'])->first();
-        if ($request->isMethod('post')) {
-            $chien->name = $params['name'];
-            $chien->title = $params['title'];
-            $chien->adult = $params['adult'];
-            $chien->owner =  $params['owner'];
-            $chien->own = $params['own'];
-            $chien->race = $params['race'];
-            $chien->info = $params['info'];
-            $chien->awards = $params['award'];
-            $chien->expositions = $params['exposition'];
-            $chien->analyses = $params['analyse'];
-            $chien->sex = $params['sex'];
-            $chien->id_portee = $params['portee'];
-            $chien->birthday = $params['birthday'];
-
-            $chien->save();
-        }
-
-        //print_r($chien);
-}*/
 
 }

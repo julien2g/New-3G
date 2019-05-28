@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="row center ">
-                            <div class="col-6">
+                            <div class="col-md-6 col-sm-12">
                                 <div class="card">
                                     <div class="card-body">
                                         <img
@@ -27,7 +27,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-6">
+                            <div class="col-md-6  col-sm-12">
                                 <div class="card">
                                     <div class="card-body">
                                         <img
@@ -48,7 +48,7 @@
                         </div>
                         </br>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-md-4 col-sm-12">
                                 <strong>Date d'accouplment : </strong> {{$portee->sex_date->format('d M Y')}}
                                 </br>
                                 <strong>Naissance @if(!isset($chiots)) prévu @endif

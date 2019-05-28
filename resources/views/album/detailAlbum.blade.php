@@ -6,7 +6,8 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Acceuil</a></li>
 
-            <li class="breadcrumb-item active" aria-current="page">Albums photos</li>
+            <li class="breadcrumb-item " aria-current="page"><a href="/albums" title="Voir les albumes">Albums photos</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{$album->name}}</li>
 
         </ol>
     </nav>
@@ -25,9 +26,8 @@
                     <img src="/storage/albums/{{$image->slug}}{{$image->ext}}"
                          class="maxImg embed-responsive"
                          title="Album de l'élevage de berger australien - De la legende asturienne"
-                         alt="Album de l'élevage de berger australien - De la legende asturienne">
+                         alt="Album de l'élevage de berger australien - De la legende asturienne. Photo uploadée le : {{$image->created_at}}">
                     </a>
-
                 </div>
             </div>
             <hr>
@@ -38,9 +38,6 @@
 <div class="">
     {{$images->links()}}
 </div>
-
-
-
 
     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
          aria-hidden="true">
@@ -61,7 +58,7 @@
                                         <img src="/storage/albums/{{$image->slug}}{{$image->ext}}"
                                              class="d-block w-100"
                                              alt="élevage de berger australien : De la légende asturienne"
-                                             title="élevage de berger australien : De la légende asturienne">
+                                             title="élevage de berger australien : De la légende asturienne. Photo uploadée le : {{$image->created_at}}">
                                     </a>
                                 </div>
                         @endforeach

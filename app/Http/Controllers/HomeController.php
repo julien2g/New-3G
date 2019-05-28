@@ -66,7 +66,7 @@ class HomeController extends Controller
 
        $news->save();
 
-        return view('admin.admin')->with('success', 'TRUE');
+        return view('admin.admin')->with('success', 'TRUE')->with('msg', 'C\'est bien noté. Sera pris en compte incessamment sous peu ! ');
     }
 
     public function getNews(){
@@ -75,4 +75,11 @@ class HomeController extends Controller
 
         return view('admin.addNews')->with('news', $news);
     }
+
+        public function logout(Request $request) {
+
+
+        return $this->Home();
+    }
+
 }

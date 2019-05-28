@@ -32,39 +32,27 @@
                 <ol class="carousel-indicators">
                     @foreach($images as $image)
                         @if($image->id_chien == $chien->id)
-                            @if($image->pos == 1)
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                    class="active"></li>
-                            @else
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-                            @endif
-
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                @if($image->pos == 1) class="active" @endif
+                            ></li>
                         @endif
                     @endforeach
                 </ol>
                 <div class="carousel-inner">
                     @foreach($images as $image)
                         @if($image->id_chien == $chien->id)
-                            @if($image->pos == 1)
-                                <div class="carousel-item active">
-                                    <a data-toggle="modal" data-target=".bd-example-modal-xl">
-                                        <img
-                                            src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
-                                            class="d-block w-100 "
-                                            alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
-                                            title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
-                                    </a>
-                                </div>
-                            @else
-                                <div class="carousel-item">
-                                    <a data-toggle="modal" data-target=".bd-example-modal-xl">
-                                        <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
-                                             class="d-block w-100 "
-                                             alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
-                                             title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
-                                    </a>
-                                </div>
-                            @endif
+
+                            <div class="carousel-item  @if($image->pos == 1) active @endif
+                                ">
+                                <a data-toggle="modal" data-target=".bd-example-modal-xl">
+                                    <img
+                                        src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                        class="d-block w-100 "
+                                        alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
+                                        title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne. Photo uploadée le : {{$image->created_at}}">
+                                </a>
+                            </div>
+
                         @endif
                     @endforeach
                 </div>
@@ -142,29 +130,29 @@
 
                 </div>
                 @if(($chien->id_portee))
-                <div class="card-body {{ $title == 'pere' ? '' : 'd-none' }}">
-                    <a href="{{route('details', ['id'=>$parents[0]->id])}}">
-                        <h5>{{$parents[0]->name}}</h5>
-                        <br>
-                        <img src="/storage/chiens/{{$parents_image[0]->slug}}{{$parents_image[0]->ext}}"
-                             class="card-img-top maxImg"
-                             alt="{{$parents[0]->name}} de l'élevage de {{$parents[0]->race}} : De la légende asturienne"
-                             title="{{$parents[1]->name}} de l'élevage de {{$parents[1]->race}} : De la légende asturienne">
+                    <div class="card-body {{ $title == 'pere' ? '' : 'd-none' }}">
+                        <a href="{{route('details', ['id'=>$parents[0]->id])}}">
+                            <h5>{{$parents[0]->name}}</h5>
+                            <br>
+                            <img src="/storage/chiens/{{$parents_image[0]->slug}}{{$parents_image[0]->ext}}"
+                                 class="card-img-top maxImg"
+                                 alt="{{$parents[0]->name}} de l'élevage de {{$parents[0]->race}} : De la légende asturienne"
+                                 title="{{$parents[1]->name}} de l'élevage de {{$parents[1]->race}} : De la légende asturienne. . Photo uploadée le : {{$parents_image[0]->created_at}} ">
 
-                    </a>
-                </div>
-                <div class="card-body {{ $title == 'mere' ? '' : 'd-none' }}">
-                    <a href="{{route('details', ['id'=>$parents[1]->id])}}">
-                        <h5>{{$parents[1]->name}}</h5>
-                        <br>
-                        <img src="/storage/chiens/{{$parents_image[1]->slug}}{{$parents_image[0]->ext}}"
-                             class="card-img-top maxImg"
-                             alt="{{$parents[1]->name}} de l'élevage de {{$parents[1]->race}} : De la légende asturienne"
-                             title="{{$parents[1]->name}} de l'élevage de {{$parents[1]->race}} : De la légende asturienne">
+                        </a>
+                    </div>
+                    <div class="card-body {{ $title == 'mere' ? '' : 'd-none' }}">
+                        <a href="{{route('details', ['id'=>$parents[1]->id])}}">
+                            <h5>{{$parents[1]->name}}</h5>
+                            <br>
+                            <img src="/storage/chiens/{{$parents_image[1]->slug}}{{$parents_image[1]->ext}}"
+                                 class="card-img-top maxImg"
+                                 alt="{{$parents[1]->name}} de l'élevage de {{$parents[1]->race}} : De la légende asturienne"
+                                 title="{{$parents[1]->name}} de l'élevage de {{$parents[1]->race}} : De la légende asturienne . Photo uploadée le : {{$parents_image[1]->created_at}}">
 
-                    </a>
-                </div>
-                    @endif
+                        </a>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
@@ -179,7 +167,7 @@
 
     <div class="row center">
         @foreach($chiens_rdm as $key=>$chien_rdm)
-            <div class=" col-3" style="width: 17rem;">
+            <div class=" col-md-3 col-sm-6" style="width: 17rem;">
                 <a href="{{route('details', ['id' => "$chien_rdm->id"])}}">
                     @if(isset($images_rdm[$key]))
                         <img src="/storage/chiens/{{$images_rdm[$key]->slug}}{{$images_rdm[$key]->ext}}"
@@ -214,39 +202,22 @@
                         <ol class="carousel-indicators">
                             @foreach($images as $image)
                                 @if($image->id_chien == $chien->id)
-                                    @if($image->pos == 1)
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                            class="active"></li>
-                                    @else
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-                                    @endif
-
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                        @if($image->pos == 1)  class="active" @endif></li>
                                 @endif
                             @endforeach
                         </ol>
                         <div class="carousel-inner">
                             @foreach($images as $image)
                                 @if($image->id_chien == $chien->id)
-                                    @if($image->pos == 1)
-                                        <div class="carousel-item active">
-                                            <a data-toggle="modal" data-target=".bd-example-modal-xl">
-                                                <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
-                                                     class="d-block w-100"
-                                                     alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
-                                                     title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
-                                            </a>
-                                        </div>
-                                    @else
-                                        <div class="carousel-item">
-                                            <a data-toggle="modal" data-target=".bd-example-modal-xl">
-                                                <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
-                                                     class="d-block w-100"
-                                                     alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
-                                                     title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
-                                            </a>
-                                        </div>
-                                    @endif
-
+                                    <div class="carousel-item  @if($image->pos == 1) active @endif">
+                                        <a data-toggle="modal" data-target=".bd-example-modal-xl">
+                                            <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                                 class="d-block w-100"
+                                                 alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
+                                                 title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
+                                        </a>
+                                    </div>
                                 @endif
                             @endforeach
                         </div>

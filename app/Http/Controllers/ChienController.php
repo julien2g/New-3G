@@ -113,6 +113,27 @@ class ChienController extends Controller
         return view('chien.listPortees')->with('portees', $portees)->with('parents', $parents)->with('images', $images);
     }
 
+    public function getPortees()
+    {
+        $parents = [];
+
+        $portees = Portee::get();
+
+
+        foreach ($portees as $portee) {
+
+            $dad = Chien::where('id', '=', $portee->id_dad)->get();
+            $mom = Chien::where('id', '=', $portee->id_mom)->get();
+
+
+            $order = array("dad" => $dad[0], "mom" => $mom[0]);
+            array_push($parents, $order);
+        }
+
+
+        return view('admin.addPortee')->with('portees', $portees)->with('parents', $parents);
+    }
+
     public function getAnciennesPortees()
     {
         $parents = [];
@@ -251,7 +272,8 @@ class ChienController extends Controller
 
         $portee->save();
 
-
+        return view('admin.admin')->with('success', 'TRUE')->with('msg', 'C\'est noté !');
+        
     }
 
 }

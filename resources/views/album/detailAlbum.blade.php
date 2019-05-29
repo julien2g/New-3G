@@ -23,10 +23,14 @@
             <div class="col-md-6">
                 <div class="card-body center col-md-12">
                     <a data-toggle="modal" data-target=".bd-example-modal-xl">
-                    <img src="/storage/albums/{{$image->slug}}{{$image->ext}}"
-                         class="maxImg embed-responsive"
-                         title="Album de l'élevage de berger australien - De la legende asturienne"
-                         alt="Album de l'élevage de berger australien - De la legende asturienne. Photo uploadée le : {{$image->created_at}}">
+                        @if($image->ext != 'video')
+                            <img src="/storage/albums/{{$image->slug}}{{$image->ext}}"
+                                 class="maxImg embed-responsive"
+                                 title="Album de l'élevage de berger australien - De la legende asturienne"
+                                 alt="Album de l'élevage de berger australien - De la legende asturienne. Photo uploadée le : {{$image->created_at}}">
+                        @else
+                            <iframe  width="500" height="400" src="{{$image->slug}}" frameborder="0" allowfullscreen></iframe>
+                        @endif
                     </a>
                 </div>
             </div>
@@ -47,12 +51,15 @@
                 <div id="carouselExampleIndicator" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @foreach($images as $image)
+                            @if($image->ext != 'video')
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0"
                                     @if($image->pos == 1) class="active" @endif></li>
+                            @endif
                         @endforeach
                     </ol>
                     <div class="carousel-inner">
                         @foreach($images as $image)
+                            @if($image->ext != 'video')
                                 <div class="carousel-item @if($image->pos == 1) active @endif">
                                     <a data-toggle="modal" data-target=".bd-example-modal-xl">
                                         <img src="/storage/albums/{{$image->slug}}{{$image->ext}}"
@@ -61,6 +68,7 @@
                                              title="élevage de berger australien : De la légende asturienne. Photo uploadée le : {{$image->created_at}}">
                                     </a>
                                 </div>
+                            @endif
                         @endforeach
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicator" role="button"

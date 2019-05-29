@@ -1,12 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    @if(isset($success) && $success == 'TRUE')
+    @if(isset($success) && $success == 'TRUE' && isset($msg))
         <div class="row center">
             <div class="alert alert-success col-12" role="alert">
-                @if(isset($success))
                     {{$msg}}
-                @endif
             </div>
         </div>
     @endif

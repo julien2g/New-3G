@@ -37,7 +37,7 @@
                 <div class="form-group col-md-6">
                     <label for="name">Nom</label>
                     <input type="text" name="name" class="form-control" id="name" placeholder="Nom"
-                           value="{{isset($chien) ? $chien->name : ''}}">
+                           value="{{isset($chien) ? $chien->name : ''}}" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="title">Titre</label>
@@ -89,7 +89,7 @@
                 <div class="form-group col-md-3">
                     <label for="birthday">Date de naissance</label>
                     <input type="text" class="form-control" name="birthday" id="birthday" placeholder="YYYY-MM-DD"
-                           value="{{isset($chien) ? $chien->birthday : ''}}">
+                           value="{{isset($chien) ? $chien->birthday : ''}}" required>
                 </div>
                 <div class="form-group col-3">
                     <label for="portee">Portée</label>
@@ -98,9 +98,7 @@
 
                         @if(isset($parents))
                             @foreach($parents as $key=>$parent)
-                                <option value="{{$portees[$key]->id}}">{{$parent['dad']->name}}
-                                    ---X---{{$parent['mom']->name}}  </option>
-
+                                <option value="{{$portees[$key]->id}}">{{$parent['dad']->name}}---X---{{$parent['mom']->name}}</option>
                             @endforeach
                         @endif
                     </select>
@@ -130,20 +128,20 @@
             </div>
             <div class="row">
 
-                    <div class="form-group col-md-2">
-                        <label for="owner">Le propriétaire </label>
-                        <select id="owner" name="owner" class="form-control">
-                            <option value=" {{isset($chien) ? $chien->owner : ''}}"> {{isset($chien) ? $chien->owner : 'Choisir...'}}</option>
-                            <option selected value="0">Moi</option>
-                            <option value="1">Autre</option>
+                <div class="form-group col-md-2">
+                    <label for="owner">Le propriétaire </label>
+                    <select id="owner" name="owner" class="form-control">
+                        <option selected
+                                value=" {{isset($chien) ? $chien->owner : '0'}}"> {{isset($chien) ? $chien->owner : 'Moi'}}</option>
+                        <option value="1">Autre</option>
 
-                        </select>
-                    </div>
+                    </select>
+                </div>
                 <div class="form-group col-md-3">
                     <label for="own">Ce chien est chez moi </label>
                     <select id="own" name="own" class="form-control">
-                        <option value=" {{isset($chien) ? $chien->own : ''}}"> {{isset($chien) ? $chien->own : 'Choisir...'}}</option>
-                        <option selected value="1">Oui</option>
+                        <option selected
+                                value=" {{isset($chien) ? $chien->own : '1'}}"> {{isset($chien) ? $chien->own : 'Oui'}}</option>
                         <option value="0">Non</option>
 
                     </select>
@@ -153,6 +151,7 @@
             <input type="hidden" name="id" value=" {{isset($chien) ? $chien->id : ''}}">
             <button type="submit" class="btn btn-primary">Entrer</button>
         </form>
+        <br><br><br>
     @endif
     @if(isset($chien))
         <div class="form-group col-12">
@@ -172,22 +171,24 @@
             <div class="col-12">
                 <div class="card-group">
                     <div class="row">
-                    @foreach ($images as $image)
-
-                        <div class="card col-2">
-                            <img class="maxImgAdmin embed-responsive" src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
-                                 alt="Album : {{$chien->name}}">
-                            <div class="card-body center">
-                                {{--<input name="pos"  class="col-1" value="{{$image->pos}}">--}}
-                                @if($image->pos != 1)
-                                <a href="{{route('delete/image', ['folder' => 'chiens', 'id_folder' => $chien->id, 'id_image' => $image->id, 'slug' => $image->slug . '' . $image->ext])}}"
-                                   title="Suprimer l'image">
-                                    <button class="btn btn-danger btn-sm">X</button>
-                                </a>
-@endif
+                        @foreach ($images as $image)
+                            <div class="col-2 ">
+                                <div class="card ">
+                                    <img class="maxImgAdmin embed-responsive"
+                                         src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                         alt="Album : {{$chien->name}}">
+                                    <div class="card-body center">
+                                        {{--<input name="pos"  class="col-1" value="{{$image->pos}}">--}}
+                                        @if($image->pos != 1)
+                                            <a href="{{route('delete/image', ['folder' => 'chiens', 'id_folder' => $chien->id, 'id_image' => $image->id, 'slug' => $image->slug . '' . $image->ext])}}"
+                                               title="Suprimer l'image">
+                                                <button class="btn btn-danger btn-sm">X</button>
+                                            </a>
+                                        @endif
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
                     </div>
                 </div>
             </div>

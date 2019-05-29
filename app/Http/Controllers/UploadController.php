@@ -79,6 +79,25 @@ class UploadController extends Controller
     }
 
 
+    public function uploadVideo(Request $request){
+
+        $params = $request->except(['_token']);
+
+        $imagesPos = ImageAlbum::where('id_album', '=', $params['id'])->orderBy('pos', 'desc')->first(); // To take the last position
+
+        $image = new ImageAlbum();
+
+        $image->id_album = $params['id'];
+        $image->slug = $params['lien'];
+        $image->pos = $imagesPos['pos'] + 1;
+        $image->ext = 'video';
+
+        $image->save();
+
+        return redirect('admin/modify/' . $params['folder'] . '/vue/filled?id=' . $params['id']);
+    }
+
+
     public function generateRandomString($length)
     {
         $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';

@@ -48,7 +48,19 @@ class AdminController extends Controller
 
         $images = Image::where('id_chien', '=', $id)->get();
 
-        return view('admin.chien')->with('chien', $chien)->with('images', $images);
+        $parents = [];
+        $portees = Portee::get();
+
+        foreach ($portees as $portee) {
+
+            $dad = Chien::where('id', '=', $portee->id_dad)->get();
+            $mom = Chien::where('id', '=', $portee->id_mom)->get();
+
+            $order = array("dad" => $dad[0], "mom" => $mom[0]);
+            array_push($parents, $order);
+        }
+
+        return view('admin.chien')->with('chien', $chien)->with('images', $images)->with('parents', $parents)->with('portees', $portees);
     }
 
     public function addNews(){
@@ -82,7 +94,23 @@ class AdminController extends Controller
         $mom = Chien::where('sex', '=', 0)->get();
 
 
-        return view('admin.addPortee')->with('dad', $dad)->with('mom', $mom);
+        return view('admin.addPortee')->with('choice_dad', $dad)->with('choice_mom', $mom);
     }
+
+    public function getPorteeFilled(Request $request){
+        $id = $request['id'];
+        $portee = Portee::where('id', '=', $id)->first();
+
+
+        $dad = Chien::where('id', '=', $portee->id_dad)->get();
+        $mom = Chien::where('id', '=', $portee->id_mom)->get();
+
+        $choice_dad = Chien::where('sex', '=', 1)->get();
+        $choice_mom = Chien::where('sex', '=', 0)->get();
+
+
+        return view('admin.addPortee')->with('portee', $portee)->with('dad', $dad)->with('mom', $mom)->with('choice_dad', $choice_dad)->with('choice_mom', $choice_mom);
+    }
+
 
 }

@@ -179,7 +179,7 @@ Route::group(['middleware' => 'admin'], function () {
     ]);
     Route::get('/admin/modify/portee/vue', [
         'as' => 'admin/modify/portee/vue',
-        'uses' => 'AlbumController@getPortee'
+        'uses' => 'ChienController@getPortees'
     ]);
 
     Route::get('/admin/modify/portee/vue/filled', [
@@ -200,6 +200,11 @@ Route::group(['middleware' => 'admin'], function () {
 Route::post('/upload/image/', [
     'as' => 'upload/image',
     'uses' => 'UploadController@uplaod'
+]);
+
+Route::post('/upload/video/', [
+    'as' => 'upload/video',
+    'uses' => 'UploadController@uploadVideo'
 ]);
 
 Route::get('/delete/image/{folder}/{id_folder}/{id_image}/{slug}', [

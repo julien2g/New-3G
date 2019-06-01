@@ -23,7 +23,7 @@
     <div class="row">
         <div class="col-12 ">
             <h1 class="page-header center">Les premiers <strong>Bergers Australiens</strong> qui nous ont donné envie de
-                devenir <strong>éleveurs canins</strong>!</h1>
+                devenir <strong>éleveurs canins</strong></h1>
         </div>
         <div class="col-md-6 col-sm-12">
             <p>C’est grâce à ces trois grosses boules de poils que nous avons eu envie de partager notre amour pour les

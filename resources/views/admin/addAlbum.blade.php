@@ -24,7 +24,7 @@
         @if(isset($album))
         <div class="row center">
             <div class="alert alert-success col-12" role="alert">
-                <a href="/album/details/{{$album->id}}" class="alert-link">Liens de l'album</a>
+                <a href="/album/details/{{$album->id}}" class="alert-link">Liens de l'album !</a>
             </div>
         </div>
     @endif

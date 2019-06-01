@@ -91,6 +91,9 @@ Route::post('email', [
 ]);
 
 
+// ------------------------------------------------ Admin ------------------------------------------------ //
+
+
 Route::group(['middleware' => 'admin'], function () {
     Route::get('/admin/', [
         'as' => 'admin',
@@ -194,7 +197,6 @@ Route::group(['middleware' => 'admin'], function () {
 
 });
 
-// ------------------------------------------------ Admin ------------------------------------------------ //
 
 // UPLOAD
 Route::post('/upload/image/', [

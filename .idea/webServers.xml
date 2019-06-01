@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="38e900e4-bdf3-4850-b8b1-2a969478f337" name="3G" url="http://153.92.6.71">
+        <fileTransfer host="153.92.6.71" port="21" rootFolder="/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="b6985759-fd4d-4279-a456-d00e2e5f7b4a" name="V2" url="http://153.92.6.71">
+        <fileTransfer host="153.92.6.71" port="21" rootFolder="/public_html/V2">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

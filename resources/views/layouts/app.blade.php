@@ -38,7 +38,7 @@
         <div class="row">
             <div class="offset-md-5 col-md-4 col-sm-6  center">
                 <a href="/">
-                    <img src="{{url('/storage/app/public/img/logo.png')}}" class="logoHeader embed-responsive"
+                    <img src="{{url('/storage/img/logo.png')}}" class="logoHeader embed-responsive"
                          alt="Logo de  l'élevage de berger autralien : la legende asturienne"
                          title="Le joli berger autralien de la legende asturienne qui surveille"/></a>
             </div>

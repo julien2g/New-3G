@@ -76,7 +76,7 @@
           <entry key="css" value="659" />
           <entry key="env" value="42" />
           <entry key="gitignore" value="2" />
-          <entry key="php" value="28217" />
+          <entry key="php" value="28220" />
           <entry key="scss" value="24" />
           <entry key="vue" value="23" />
         </counts>
@@ -86,7 +86,7 @@
           <entry key=".env file" value="42" />
           <entry key="Blade" value="17081" />
           <entry key="CSS" value="659" />
-          <entry key="PHP" value="11136" />
+          <entry key="PHP" value="11139" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SCSS" value="24" />
           <entry key="Vue.js" value="23" />
@@ -165,8 +165,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="386">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -534,12 +534,12 @@
       <workItem from="1559052047042" duration="4293000" />
       <workItem from="1559137101537" duration="6461000" />
       <workItem from="1559181476967" duration="439000" />
-      <workItem from="1559359636272" duration="3514000" />
+      <workItem from="1559359636272" duration="3781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213665000" />
+    <option name="totallyTimeSpent" value="213932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -862,13 +862,6 @@
         <state relative-caret-position="-364" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/public/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -879,10 +872,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        <state relative-caret-position="386">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>

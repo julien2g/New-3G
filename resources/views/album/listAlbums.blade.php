@@ -21,7 +21,7 @@
                 <a href="{{route('album/details', ['id' => "$album->id"])}}">
                     <div class="card-body center col-md-12">
                         @if(isset($images[$key]))
-                            <img src="public/storage/albums/{{$images[$key]->slug}}{{$images[$key]->ext}}"
+                            <img src="/public/storage/albums/{{$images[$key]->slug}}{{$images[$key]->ext}}"
                                  class="maxImg embed-responsive"
                                  title="Album de l'élevage de berger australien - De la legende asturienne"
                                  alt="Album de l'élevage de berger australien - De la legende asturienne">

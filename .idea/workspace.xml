@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e46944e3-a92e-4d9c-960f-31e71fa83dcd" name="Default Changelist" comment="" />
+    <list default="true" id="e46944e3-a92e-4d9c-960f-31e71fa83dcd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,7 @@
           <entry key="env" value="42" />
           <entry key="gitignore" value="2" />
           <entry key="htaccess" value="11" />
-          <entry key="php" value="28505" />
+          <entry key="php" value="28506" />
           <entry key="scss" value="24" />
           <entry key="txt" value="15" />
           <entry key="vue" value="23" />
@@ -91,7 +93,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="42" />
-          <entry key="Blade" value="17359" />
+          <entry key="Blade" value="17360" />
           <entry key="CSS" value="659" />
           <entry key="PHP" value="11146" />
           <entry key="PLAIN_TEXT" value="28" />
@@ -149,20 +151,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/album/detailAlbum.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="788">
-              <caret line="64" column="56" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
+            <state relative-caret-position="390">
+              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/album/listAlbums.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -283,8 +285,8 @@
         <option value="$PROJECT_DIR$/resources/views/chien/listChiens.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/chien/listChiots.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/chien/listPortees.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/album/detailAlbum.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/album/listAlbums.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/album/detailAlbum.blade.php" />
       </list>
     </option>
   </component>
@@ -525,12 +527,12 @@
       <workItem from="1559359636272" duration="5912000" />
       <workItem from="1559477350925" duration="1325000" />
       <workItem from="1559716797108" duration="1149000" />
-      <workItem from="1559727792264" duration="2621000" />
+      <workItem from="1559727792264" duration="2837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221158000" />
+    <option name="totallyTimeSpent" value="221374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -867,17 +869,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/album/detailAlbum.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="64" column="56" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/album/listAlbums.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/album/detailAlbum.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
         </state>
       </provider>
     </entry>

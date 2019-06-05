@@ -18,7 +18,7 @@ class UploadController extends Controller
         $params = $request->except(['_token']);
 
         foreach ($params['image'] as $img) { // For each img upload
-            $slug = $this->generateRandomString(5); // Give name
+            $slug = $params['id'] . '___' . $this->generateRandomString(5); // Give name
 
             $img->storeAs('/public/' . $params['folder'], $slug . '.' . $img->getClientOriginalExtension()); // Store imgWith the name "Slug"
 

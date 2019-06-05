@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="type_your_description_here">
+    <meta name="description" content="L'élevage de chien 'De la legende asturienne' vous propose des berger australien pure race, cours particulier afin d'éduquer vos chiens et chiots.">
     <link rel="icon" type="image/x-icon" href="{{url('public/storage/img/logo.png')}}" />
     <title>{{ config('app.name', 'Elevage de la legende Asturienne') }}</title>
 
@@ -166,7 +166,7 @@
                 <div class="col-4 center">
                     <h5>A propos de nous</h5>
 
-                    <a href="#">Notre élevage</a>
+                    <a href="{{ route('about') }}">Notre élevage</a>
                     </br>
                     <a href="#">Activités</a>
                     </br>

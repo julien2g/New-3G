@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e46944e3-a92e-4d9c-960f-31e71fa83dcd" name="Default Changelist" comment="" />
+    <list default="true" id="e46944e3-a92e-4d9c-960f-31e71fa83dcd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,18 +32,18 @@
     <session id="1636634629">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="28" />
-          <entry key="project.open.time.1" value="5" />
+          <entry key="project.closed" value="30" />
+          <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.10" value="7" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="7" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -53,7 +56,7 @@
           <entry key="js" value="2" />
           <entry key="less" value="1" />
           <entry key="md" value="1" />
-          <entry key="php" value="180" />
+          <entry key="php" value="181" />
           <entry key="png" value="3" />
           <entry key="scss" value="1" />
           <entry key="txt" value="1" />
@@ -63,7 +66,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="4" />
-          <entry key="Blade" value="113" />
+          <entry key="Blade" value="114" />
           <entry key="CSS" value="11" />
           <entry key="Image" value="4" />
           <entry key="JavaScript" value="2" />
@@ -81,7 +84,7 @@
           <entry key="env" value="42" />
           <entry key="gitignore" value="2" />
           <entry key="htaccess" value="11" />
-          <entry key="php" value="28539" />
+          <entry key="php" value="28730" />
           <entry key="scss" value="24" />
           <entry key="txt" value="15" />
           <entry key="vue" value="23" />
@@ -91,7 +94,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="42" />
-          <entry key="Blade" value="17393" />
+          <entry key="Blade" value="17584" />
           <entry key="CSS" value="659" />
           <entry key="PHP" value="11146" />
           <entry key="PLAIN_TEXT" value="28" />
@@ -122,11 +125,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="184" selection-start-line="6" selection-start-column="184" selection-end-line="6" selection-end-column="184" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiens.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+            <state relative-caret-position="780">
+              <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -134,7 +146,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiots.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
+            <state relative-caret-position="570">
               <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
             </state>
           </provider>
@@ -152,8 +164,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/album/detailAlbum.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="73" column="28" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="73" selection-end-column="28" />
+            <state relative-caret-position="1095">
+              <caret line="73" column="28" selection-start-line="72" selection-start-column="19" selection-end-line="73" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -161,16 +173,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/addAlbum.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
+            <state relative-caret-position="1275">
               <caret line="85" column="73" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/chien.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="2655">
               <caret line="177" column="53" selection-start-line="177" selection-start-column="53" selection-end-line="177" selection-end-column="53" />
             </state>
           </provider>
@@ -179,7 +191,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/album/listAlbums.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
+            <state relative-caret-position="345">
               <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
             </state>
           </provider>
@@ -188,17 +200,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
+            <state relative-caret-position="1860">
               <caret line="124" column="90" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/explaination.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="144" column="65" selection-start-line="144" selection-start-column="65" selection-end-line="144" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -294,7 +297,6 @@
         <option value="$PROJECT_DIR$/resources/views/about.blade.php" />
         <option value="$PROJECT_DIR$/sitemap.xml" />
         <option value="$PROJECT_DIR$/robots.txt" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/album/listAlbums.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/album/detailAlbum.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/chien/listPortees.blade.php" />
@@ -303,6 +305,7 @@
         <option value="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/addAlbum.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/chien.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
       </list>
     </option>
   </component>
@@ -419,6 +422,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -466,11 +470,17 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="chien" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="new3G" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new3G" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -557,17 +567,20 @@
       <workItem from="1559359636272" duration="5912000" />
       <workItem from="1559477350925" duration="1325000" />
       <workItem from="1559716797108" duration="1149000" />
-      <workItem from="1559727792264" duration="3766000" />
+      <workItem from="1559727792264" duration="4073000" />
+      <workItem from="1559748652706" duration="322000" />
+      <workItem from="1559749123801" duration="194000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222303000" />
+    <option name="totallyTimeSpent" value="223126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16544567" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16910867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -819,13 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-826">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/contact.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -850,17 +856,24 @@
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="124" column="90" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="90" />
+        <state relative-caret-position="2655">
+          <caret line="177" column="67" selection-start-line="177" selection-start-column="67" selection-end-line="177" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/album/listAlbums.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiens.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        <state relative-caret-position="780">
+          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiots.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -871,45 +884,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiots.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiens.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2655">
-          <caret line="177" column="67" selection-start-line="177" selection-start-column="67" selection-end-line="177" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/album/detailAlbum.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="73" column="28" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="73" selection-end-column="28" />
+        <state relative-caret-position="1095">
+          <caret line="73" column="28" selection-start-line="72" selection-start-column="19" selection-end-line="73" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/addAlbum.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
+        <state relative-caret-position="1275">
           <caret line="85" column="73" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/chien.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="2655">
           <caret line="177" column="53" selection-start-line="177" selection-start-column="53" selection-end-line="177" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/album/listAlbums.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1860">
+          <caret line="124" column="90" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="184" selection-start-line="6" selection-start-column="184" selection-end-line="6" selection-end-column="184" />
         </state>
       </provider>
     </entry>

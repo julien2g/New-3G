@@ -24,7 +24,7 @@
                 <div class="card-body center col-md-12">
                     <a data-toggle="modal" data-target=".bd-example-modal-xl">
                         @if($image->ext != 'video')
-                            <img src="/storage/albums/{{$image->slug}}{{$image->ext}}"
+                            <img src="public/storage/albums/{{$image->slug}}{{$image->ext}}"
                                  class="maxImg embed-responsive"
                                  title="Album de l'élevage de berger australien - De la legende asturienne"
                                  alt="Album de l'élevage de berger australien - De la legende asturienne. Photo uploadée le : {{$image->created_at}}">
@@ -62,7 +62,7 @@
                             @if($image->ext != 'video')
                                 <div class="carousel-item @if($image->pos == 1) active @endif">
                                     <a data-toggle="modal" data-target=".bd-example-modal-xl">
-                                        <img src="/storage/albums/{{$image->slug}}{{$image->ext}}"
+                                        <img src="public/storage/albums/{{$image->slug}}{{$image->ext}}"
                                              class="d-block w-100"
                                              alt="élevage de berger australien : De la légende asturienne"
                                              title="élevage de berger australien : De la légende asturienne. Photo uploadée le : {{$image->created_at}}">

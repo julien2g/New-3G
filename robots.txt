@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /explaination/les_besoins_des_bergers_australiens
+Disallow: /explaination/mauvais_marquage_blanc
+Disallow: /explaination/adopter_pour_la_vie
+Sitemap: https://de-la-legende-asturienne.fr/sitemap.xml

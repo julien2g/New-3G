@@ -12,7 +12,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <img
-                                            src="/storage/chiens/{{$images[$key]["dad"]->slug}}{{$images[$key]["dad"]->ext}}"
+                                            src="public/storage/chiens/{{$images[$key]["dad"]->slug}}{{$images[$key]["dad"]->ext}}"
                                             class="d-block w-100"
                                             alt="{{$parents[$key]["dad"]->name}} de l'élevage de {{$parents[$key]["dad"]->race}} : De la légende asturienne"
                                             title="{{$parents[$key]["dad"]->name}} de l'élevage de {{$parents[$key]["dad"]->race}} : De la légende asturienne">
@@ -31,7 +31,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <img
-                                            src="/storage/chiens/{{$images[$key]["mom"]->slug}}{{$images[$key]["mom"]->ext}}"
+                                            src="public/storage/chiens/{{$images[$key]["mom"]->slug}}{{$images[$key]["mom"]->ext}}"
                                             class="d-block w-100"
                                             alt="{{$parents[$key]["mom"]->name}} de l'élevage de {{$parents[$key]["mom"]->race}} : De la légende asturienne"
                                             title="{{$parents[$key]["mom"]->name}} de l'élevage de {{$parents[$key]["mom"]->race}} : De la légende asturienne">
@@ -70,7 +70,7 @@
                                             <div class="card">
                                                 @foreach($images_chiots as $img)
                                                     @if(isset($img) && $img->id_chien == $chiot->id)
-                                                        <img src="/storage/chiens/{{$img->slug}}{{$img->ext}}"
+                                                        <img src="public/storage/chiens/{{$img->slug}}{{$img->ext}}"
                                                              class="card-img-top maxImg"
                                                              alt="{{$chiot->name}} de l'élevage de {{$chiot->race}} : De la légende asturienne"
                                                              title="{{$chiot->name}} de l'élevage de {{$chiot->race}} : De la légende asturienne">
@@ -80,7 +80,7 @@
                                                     <h5 class="card-title">{{$chiot->name}}</h5>
                                                     <div class="center">
                                                         <img
-                                                            src="{{url('/storage/img/pate.png')}}" class="pate "
+                                                            src="{{url('public/storage/img/pate.png')}}" class="pate "
                                                             height="100px" width="100px"
                                                             alt="Pate de berger australien" title="Plus de détails">
 

@@ -170,12 +170,12 @@
             <div class=" col-md-3 col-sm-6" style="width: 17rem;">
                 <a href="{{route('details', ['id' => "$chien_rdm->id"])}}">
                     @if(isset($images_rdm[$key]))
-                        <img src="/storage/chiens/{{$images_rdm[$key]->slug}}{{$images_rdm[$key]->ext}}"
+                        <img src="public/storage/chiens/{{$images_rdm[$key]->slug}}{{$images_rdm[$key]->ext}}"
                              class="d-block w-100"
                              alt="{{$chien_rdm->name}} de l'élevage de {{$chien_rdm->race}} : De la légende asturienne"
                              title="{{$chien_rdm->name}} de l'élevage de {{$chien_rdm->race}} : De la légende asturienne">
                     @else
-                        <img src="/storage/img/soon.jpg"
+                        <img src="public/storage/img/soon.jpg"
                              class="d-block w-100 maxImg"
                              alt="{{$chien_rdm->name}} de l'élevage de {{$chien_rdm->race}} : De la légende asturienne"
                              title="{{$chien_rdm->name}} de l'élevage de {{$chien_rdm->race}} : De la légende asturienne">
@@ -185,7 +185,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{$chien_rdm->name}}</h5>
                     <a href="{{route('details', ['id' => "$chien_rdm->id"])}}"><img
-                            src="{{url('/storage/img/pate.png')}}" class="pate" height="100px" width="100px"
+                            src="{{url('public/storage/img/pate.png')}}" class="pate" height="100px" width="100px"
                             alt="Pate de berger australien" title="Plus de détails"> </a>
                 </div>
             </div>
@@ -212,7 +212,7 @@
                                 @if($image->id_chien == $chien->id)
                                     <div class="carousel-item  @if($image->pos == 1) active @endif">
                                         <a data-toggle="modal" data-target=".bd-example-modal-xl">
-                                            <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                            <img src="public/storage/chiens/{{$image->slug}}{{$image->ext}}"
                                                  class="d-block w-100"
                                                  alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
                                                  title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">

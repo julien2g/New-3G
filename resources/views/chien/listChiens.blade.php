@@ -21,67 +21,15 @@
         <div class="row">
             <div class="col-md-6">
 
-                {{--@foreach($images as $image)
-                    @if($image->id_chien == $chien->id && $image->pos == 1)
-                            <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}" class="card-img" alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne" title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
-                    @endif
-                @endforeach--}}
-
-
- {{--               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        @foreach($images as $image)
-                            @if($image->id_chien == $chien->id)
-                                @if($image->pos == 1)
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                @else
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-                                @endif
-
-                            @endif
-                        @endforeach
-                    </ol>
-                    <div class="carousel-inner">
-
-                        @foreach($images as $image)
-                            @if($image->id_chien == $chien->id)
-                                @if($image->pos == 1)
-                                    <div class="carousel-item active">
-                                        <a href="{{route('details', ['id' => "$chien->id"])}}">
-                                            <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
-                                                 class="d-block w-100 maxImg"
-                                                 alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
-                                                 title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
-                                        </a>
-                                    </div>
-                                @else
-                                    <div class="carousel-item">
-                                        <a href="{{route('details', ['id' => "$chien->id"])}}">
-                                            <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
-                                                 class="d-block w-100 maxImg"
-                                                 alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
-                                                 title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
-                                        </a>
-                                    </div>
-                                @endif
-
-                            @endif
-                        @endforeach
-                    </div>
-
-                </div>--}}
-
 
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @foreach($images[$key] as $image)
                             @if($image->id_chien == $chien->id)
-                                @if($image->pos == 1)
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                @else
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-                                @endif
 
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" @if($image->pos == 1) class="active"  @endif></li>
+                               {{-- @else
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>--}}
                             @endif
                         @endforeach
                     </ol>
@@ -89,16 +37,16 @@
 
                         @foreach($images[$key] as $image)
                             @if($image->id_chien == $chien->id)
-                                @if($image->pos == 1)
-                                    <div class="carousel-item active">
+
+                                    <div class="carousel-item @if($image->pos == 1) active @endif">
                                         <a href="{{route('details', ['id' => "$chien->id"])}}">
-                                            <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                            <img src="public/storage/chiens/{{$image->slug}}{{$image->ext}}"
                                                  class="d-block w-100 maxImg"
                                                  alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
                                                  title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
                                         </a>
                                     </div>
-                                @else
+                               {{-- @else
                                     <div class="carousel-item">
                                         <a href="{{route('details', ['id' => "$chien->id"])}}">
                                             <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
@@ -106,9 +54,7 @@
                                                  alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
                                                  title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
                                         </a>
-                                    </div>
-                                @endif
-
+                                    </div>--}}
                             @endif
                         @endforeach
                     </div>

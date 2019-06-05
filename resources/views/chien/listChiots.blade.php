@@ -19,12 +19,12 @@
                         <ol class="carousel-indicators">
                             @foreach($images[$key] as $image)
                                 @if($image->id_chien == $chien->id)
-                                    @if($image->pos == 1)
+
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                            class="active"></li>
-                                    @else
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-                                    @endif
+                                            @if($image->pos == 1) class="active" @endif></li>
+                                    {{--@else
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>--}}
+
 
                                 @endif
                             @endforeach
@@ -33,16 +33,16 @@
 
                             @foreach($images[$key] as $image)
                                 @if($image->id_chien == $chien->id)
-                                    @if($image->pos == 1)
-                                        <div class="carousel-item active">
+
+                                        <div class="carousel-item  @if($image->pos == 1) active" @endif>
                                             <a href="{{route('details', ['id' => "$chien->id"])}}">
-                                                <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                                <img src="public/storage/chiens/{{$image->slug}}{{$image->ext}}"
                                                      class="d-block w-100 maxImg"
                                                      alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
                                                      title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
                                             </a>
                                         </div>
-                                    @else
+                                    {{--@else
                                         <div class="carousel-item">
                                             <a href="{{route('details', ['id' => "$chien->id"])}}">
                                                 <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
@@ -50,8 +50,8 @@
                                                      alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
                                                      title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
                                             </a>
-                                        </div>
-                                    @endif
+                                        </div>--}}
+
 
                                 @endif
                             @endforeach

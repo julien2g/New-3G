@@ -24,7 +24,7 @@
                 <div class="card-body center col-md-12">
                     <a data-toggle="modal" data-target=".bd-example-modal-xl">
                         @if($image->ext != 'video')
-                            <img src="public/storage/albums/{{$image->slug}}{{$image->ext}}"
+                            <img src="/public/storage/albums/{{$image->slug}}{{$image->ext}}"
                                  class="maxImg embed-responsive"
                                  title="Album de l'élevage de berger australien - De la legende asturienne"
                                  alt="Album de l'élevage de berger australien - De la legende asturienne. Photo uploadée le : {{$image->created_at}}">

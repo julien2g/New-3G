@@ -175,7 +175,7 @@
                              alt="{{$chien_rdm->name}} de l'élevage de {{$chien_rdm->race}} : De la légende asturienne"
                              title="{{$chien_rdm->name}} de l'élevage de {{$chien_rdm->race}} : De la légende asturienne">
                     @else
-                        <img src="/public/storage/img/soon.jpg"
+                        <img src="{{url('public/storage/img/soon.jpg')}}"
                              class="d-block w-100 maxImg"
                              alt="{{$chien_rdm->name}} de l'élevage de {{$chien_rdm->race}} : De la légende asturienne"
                              title="{{$chien_rdm->name}} de l'élevage de {{$chien_rdm->race}} : De la légende asturienne">

@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e46944e3-a92e-4d9c-960f-31e71fa83dcd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/album/detailAlbum.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/album/detailAlbum.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/album/listAlbums.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/album/listAlbums.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/chien/listPortees.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chien/listPortees.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/chien/listChiens.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chien/listChiens.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/chien/listChiots.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chien/listChiots.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +86,7 @@
           <entry key="env" value="42" />
           <entry key="gitignore" value="2" />
           <entry key="htaccess" value="11" />
-          <entry key="php" value="28511" />
+          <entry key="php" value="28519" />
           <entry key="scss" value="24" />
           <entry key="txt" value="15" />
           <entry key="vue" value="23" />
@@ -96,7 +96,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="42" />
-          <entry key="Blade" value="17365" />
+          <entry key="Blade" value="17373" />
           <entry key="CSS" value="659" />
           <entry key="PHP" value="11146" />
           <entry key="PLAIN_TEXT" value="28" />
@@ -118,11 +118,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="177" column="32" selection-start-line="177" selection-start-column="29" selection-end-line="177" selection-end-column="32" />
+            <state relative-caret-position="719">
+              <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -130,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiens.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+            <state relative-caret-position="630">
+              <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -140,12 +140,12 @@
         <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiots.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="86">
-              <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+              <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/chien/listPortees.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -284,12 +284,12 @@
         <option value="$PROJECT_DIR$/sitemap.xml" />
         <option value="$PROJECT_DIR$/robots.txt" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/chien/listChiens.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/chien/listChiots.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/album/listAlbums.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/album/detailAlbum.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/chien/listPortees.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/chien/listChiots.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/chien/listChiens.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" />
       </list>
     </option>
   </component>
@@ -530,12 +530,12 @@
       <workItem from="1559359636272" duration="5912000" />
       <workItem from="1559477350925" duration="1325000" />
       <workItem from="1559716797108" duration="1149000" />
-      <workItem from="1559727792264" duration="3034000" />
+      <workItem from="1559727792264" duration="3244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221571000" />
+    <option name="totallyTimeSpent" value="221781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -844,27 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="177" column="32" selection-start-line="177" selection-start-column="29" selection-end-line="177" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiens.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiots.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/album/listAlbums.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
@@ -883,6 +862,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiots.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiens.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
         </state>
       </provider>
     </entry>

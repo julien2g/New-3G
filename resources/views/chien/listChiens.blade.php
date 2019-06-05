@@ -40,7 +40,7 @@
 
                                     <div class="carousel-item @if($image->pos == 1) active @endif">
                                         <a href="{{route('details', ['id' => "$chien->id"])}}">
-                                            <img src="public/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                            <img src="/public/storage/chiens/{{$image->slug}}{{$image->ext}}"
                                                  class="d-block w-100 maxImg"
                                                  alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
                                                  title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">

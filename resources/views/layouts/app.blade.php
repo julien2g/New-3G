@@ -54,7 +54,7 @@
             </div>
             <div class="col-md-3 col-sm-1  right">
                 @if (auth()->check())
-                <a href="{{route('admin')}}"> Social media</a>
+                <a href="{{route('admin')}}">Admin</a>
                 @endif
                 <a href="https://www.facebook.com/De-La-Legende-Asturienne-101469213959401/?hc_ref=ARTWt0l76u1D_TKFlhUpD-iyBtIpgjDGd_eqZqWML4dP3ohn8gvzWZ1cdN-KvVnP0KM&fref=nf"
                    class="blue" title="Follow us on Facebook"> <i class="fab fa-facebook-square fa-2x"></i></a>

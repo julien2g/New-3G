@@ -175,7 +175,7 @@
                             <div class="col-2 ">
                                 <div class="card ">
                                     <img class="maxImgAdmin embed-responsive"
-                                         src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                         src="/public/storage/chiens/{{$image->slug}}{{$image->ext}}"
                                          alt="Album : {{$chien->name}}">
                                     <div class="card-body center">
                                         {{--<input name="pos"  class="col-1" value="{{$image->pos}}">--}}

@@ -83,7 +83,7 @@
                             @foreach ($images as $image)
                                 <div class="card">
                                     @if($image->ext != 'video')
-                                    <img class="maxImgAdmin" src="/storage/albums/{{$image->slug}}{{$image->ext}}"
+                                    <img class="maxImgAdmin" src="/public/storage/albums/{{$image->slug}}{{$image->ext}}"
                                          alt="Album : {{$album->name}}">
                                     @endif
                                     <div class="card-body center">

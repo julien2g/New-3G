@@ -149,7 +149,7 @@
                     </ul>
                 </div>
                 <div class="col-4 center">
-                    <img src="{{url('/storage/img/logo.png')}}" class="maxImg embed-responsive"
+                    <img src="{{url('public/storage/img/logo.png')}}" class="maxImg embed-responsive"
                          alt="Logo de  l'élevage de berger autralien : la legende asturienne"
                          title="Le joli berger autralien de la legende asturienne qui surveille"/>
                 </div>

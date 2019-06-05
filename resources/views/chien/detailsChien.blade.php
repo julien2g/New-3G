@@ -46,7 +46,7 @@
                                 ">
                                 <a data-toggle="modal" data-target=".bd-example-modal-xl">
                                     <img
-                                        src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                        src="public/storage/chiens/{{$image->slug}}{{$image->ext}}"
                                         class="d-block w-100 "
                                         alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
                                         title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne. Photo uploadée le : {{$image->created_at}}">
@@ -134,7 +134,7 @@
                         <a href="{{route('details', ['id'=>$parents[0]->id])}}">
                             <h5>{{$parents[0]->name}}</h5>
                             <br>
-                            <img src="/storage/chiens/{{$parents_image[0]->slug}}{{$parents_image[0]->ext}}"
+                            <img src="public/storage/chiens/{{$parents_image[0]->slug}}{{$parents_image[0]->ext}}"
                                  class="card-img-top maxImg"
                                  alt="{{$parents[0]->name}} de l'élevage de {{$parents[0]->race}} : De la légende asturienne"
                                  title="{{$parents[1]->name}} de l'élevage de {{$parents[1]->race}} : De la légende asturienne. . Photo uploadée le : {{$parents_image[0]->created_at}} ">
@@ -145,7 +145,7 @@
                         <a href="{{route('details', ['id'=>$parents[1]->id])}}">
                             <h5>{{$parents[1]->name}}</h5>
                             <br>
-                            <img src="/storage/chiens/{{$parents_image[1]->slug}}{{$parents_image[1]->ext}}"
+                            <img src="public/storage/chiens/{{$parents_image[1]->slug}}{{$parents_image[1]->ext}}"
                                  class="card-img-top maxImg"
                                  alt="{{$parents[1]->name}} de l'élevage de {{$parents[1]->race}} : De la légende asturienne"
                                  title="{{$parents[1]->name}} de l'élevage de {{$parents[1]->race}} : De la légende asturienne . Photo uploadée le : {{$parents_image[1]->created_at}}">

@@ -23,7 +23,7 @@
 
             @if( $title == 'adopter_pour_la_vie')
 
-                <img class="img-thumbnail" src="{{url('/storage/img/adopt.jpg')}}"
+                <img class="img-thumbnail" src="{{url('public/storage/img/adopt.jpg')}}"
                      alt="Elevage de chiens berger Australien Sud" title="Elevage de chiens berger Australien">
 
 
@@ -72,7 +72,7 @@
 
             @elseif( $title == 'les_besoins_des_bergers_australiens')
                 <div class="center">
-                    <img class="img-thumbnail" src="{{url('/storage/img/sport.png')}}"
+                    <img class="img-thumbnail" src="{{url('public/storage/img/sport.png')}}"
                          alt="Elevage de chiens berger Australien Sud" title="Elevage de chiens berger Australien">
                 </div>
                 <h1 class="page-header center "> Besoin énorme en activités physiques</h1>
@@ -142,7 +142,7 @@
             @elseif( $title == 'mauvais_marquage_blanc')
 
                 <div class="center">
-                    <img class="img-thumbnail" src="{{url('/storage/img/sport.png')}}"
+                    <img class="img-thumbnail" src="{{url('public/storage/img/sport.png')}}"
                          alt="Elevage de chiens berger Australien Sud" title="Elevage de chiens berger Australien">
                 </div>
                 <h1 class="page-header center "> Un mauvais marquage ou blanc envahissant ?</h1>

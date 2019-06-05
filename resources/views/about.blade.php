@@ -23,7 +23,7 @@
         </div>
 
         <div class="col-md-6 col-sm-12">
-            <img class="img-thumbnail" src="{{url('/storage/img/Les3.png')}}"
+            <img class="img-thumbnail" src="{{url('public/storage/img/Les3.png')}}"
                  alt="Elevage de chiens berger Australien Sud" title="Elevage de chiens berger Australien">
 
         </div>
@@ -34,7 +34,7 @@
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row no-gutters">
                 <div class="col-md-4">
-                    <img src="{{url('/storage/img/maman.png')}}" class="card-img" alt="...">
+                    <img src="{{url('public/storage/img/maman.png')}}" class="card-img" alt="Eleveuse de berger Australien" title="Eleveuse de berger Australien">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -66,8 +66,8 @@
                 </div>
                 <div class="col-md-4 ">
 
-                    <img src="{{url('/storage/img/emile.png')}}" width="200px" height="318px" class="card-img"
-                         alt="...">
+                    <img src="{{url('public/storage/img/emile.png')}}" width="200px" height="318px" class="card-img"
+                         alt="Eleveur de berger Australien" title="Eleveur de berger Australien">
 
                 </div>
             </div>
@@ -115,7 +115,7 @@
         <div class="card col-12">
             <div class="row no-gutters">
                 <div class="col-6">
-                    <img src="{{url('/storage/img/1.jpg')}}" class="card-img" alt="...">
+                    <img src="{{url('public/storage/img/1.jpg')}}" class="card-img" alt="Le pont de covadonga" title="Le pont de covadonga">
                 </div>
                 <div class="col-md-6">
                     <div class="card-body">
@@ -143,7 +143,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <img src="{{url('/storage/img/5.jpg')}}" class="card-img" alt="...">
+                    <img src="{{url('public/storage/img/5.jpg')}}" class="card-img" alt="L'oreo des Asturies" title="L'oreo des Asturies">
                 </div>
             </div>
         </div>
@@ -153,7 +153,7 @@
         <div class="card col-12">
             <div class="row no-gutters">
                 <div class="col-6">
-                    <img src="{{url('/storage/img/3.jpg')}}" class="card-img" alt="...">
+                    <img src="{{url('public/storage/img/3.jpg')}}" class="card-img" alt="Le cidre des Asturies" title="Le cidre des Asturies">
                 </div>
                 <div class="col-md-6">
                     <div class="card-body">

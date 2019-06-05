@@ -42,7 +42,7 @@
         </div>
 
         <div class="col-md-6 col-sm-12">
-            <img class="img-thumbnail embed-responsive" src="{{url('/storage/img/Les3.png')}}"
+            <img class="img-thumbnail embed-responsive" src="{{url('public/storage/img/Les3.png')}}"
                  alt="Elevage de chiens berger Australien Sud" title="Elevage de chiens berger Australien">
 
         </div>
@@ -57,7 +57,7 @@
         <div class="col-sm-4">
             <div class="card minCard">
                 <div class="minImgCard">
-                    <img src="{{url('/storage/img/adopt.jpg')}}" class="card-img-top "
+                    <img src="{{url('public/storage/img/adopt.jpg')}}" class="card-img-top "
                          alt="Adopter un animal de compagnie c'est pour la vie"
                          title="L'enfant et le berger australien">
                 </div>
@@ -75,14 +75,14 @@
 
                 </div>
                 <a href="{{route('explaination', ['title' => 'adopter_pour_la_vie'])}}" rel="nofollow"><img
-                        src="{{url('/storage/img/pate.png')}}" class="pate" height="100px" width="100px"
+                        src="{{url('public/storage/img/pate.png')}}" class="pate" height="100px" width="100px"
                         alt="Pate de berger australien" title="Plus de détails"> </a>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="card minCard">
                 <div class="minImgCard">
-                    <img src="{{url('/storage/img/sport.png')}}" class="card-img-top "
+                    <img src="{{url('public/storage/img/sport.png')}}" class="card-img-top "
                          alt="La tribu de berger australien" title="La tribu de berger australien">
                 </div>
                 <div class="card-body">
@@ -101,14 +101,14 @@
                 </div>
                 <a href="{{route('explaination', ['title' => 'les_besoins_des_bergers_australiens'])}}"
                    rel="nofollow"><img
-                        src="{{url('/storage/img/pate.png')}}" class="pate" height="100px" width="100px"
+                        src="{{url('public/storage/img/pate.png')}}" class="pate" height="100px" width="100px"
                         alt="Pate de berger australien" title="Plus de détails"> </a>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="card minCard">
                 <div class="minImgCard">
-                    <img src="{{url('/storage/img/sport.png')}}" class="card-img-top"
+                    <img src="{{url('public/storage/img/sport.png')}}" class="card-img-top"
                          alt="La tribu de berger australien" title="La tribu de berger australien">
                 </div>
                 <div class="card-body">
@@ -123,7 +123,7 @@
 
                 </div>
                 <a href="{{route('explaination', ['title' => 'mauvais_marquage_blanc'])}}" rel="nofollow"><img
-                        src="{{url('/storage/img/pate.png')}}" class="pate" height="100px" width="100px"
+                        src="{{url('public/storage/img/pate.png')}}" class="pate" height="100px" width="100px"
                         alt="Pate de berger australien" title="Plus de détails"> </a>
             </div>
         </div>

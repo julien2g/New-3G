@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
           content="L'élevage de chien 'De la legende asturienne' vous propose des berger australien pure race, cours particulier afin d'éduquer vos chiens et chiots.">
-
+    <meta name="keywords" content="Elevage berger australien dressage cours d'education chiens chien" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="/public/storage/img/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/public/storage/img/favicons/apple-icon-60x60.png">

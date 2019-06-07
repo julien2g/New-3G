@@ -209,7 +209,7 @@
             </div>
 
             <div class="row">
-                <div class="offset-md-5 col-md-8 right">
+                <div class="offset-md-7 col-md-6 right">
                     <form role="form" method="post" action="{{ route('email') }}">
                     @csrf <!-- {{ csrf_field() }} -->
                         <table>
@@ -217,15 +217,6 @@
                                 <th>Restez informés :</th>
                             </tr>
                             <tr>
-                                <th>
-
-                                    <input class="col-sm-12" type="email" name="email" placeholder="Votre email">
-
-
-                                </th>
-                                <th>
-                                    <button type="submit" class="btn btn-sm btn-primary">Confirm</button>
-                                </th>
                                 <th>
                                     <a href="https://www.facebook.com/De-La-Legende-Asturienne-101469213959401/?hc_ref=ARTWt0l76u1D_TKFlhUpD-iyBtIpgjDGd_eqZqWML4dP3ohn8gvzWZ1cdN-KvVnP0KM&fref=nf"
                                        class="blue" title="Follow us on Facebook"> <i
@@ -237,6 +228,8 @@
                             </tr>
                         </table>
                     </form>
+                        <input class="col-sm-6 col-m-6" type="email" name="email" placeholder="Votre email">
+                        <button type="submit" class="btn btn-sm btn-primary">Confirm</button>
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@
     <div class="row">
         @foreach($news as $n)
             <div class="jumbotron col-12">
-                <h3>{{$n->title}}</h3>
+                <h4>{{$n->title}}</h4>
 
                 <hr class="my-4">
                 <p>{{$n->text}}</p>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="card-body">
                     <div class="minCardTitle">
-                        <h5 class="card-title">Adopter un animal de compagnie</h5>
+                        <h6 class="card-title">Adopter un animal de compagnie</h6>
                         <h8 class="card-title text-muted">C'est pour le vie !</h8>
                     </div>
                     <hr>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="card-body">
                     <div class="minCardTitle">
-                        <h5 class="card-title ">Les besoins des berger australiens</h5>
+                        <h6 class="card-title ">Les besoins des berger australiens</h6>
                     </div>
                     <hr>
                     <h8 class="card-title ">Ce sont des
@@ -113,7 +113,7 @@
                 </div>
                 <div class="card-body">
                     <div class="minCardTitle">
-                        <h5 class="card-title ">Un mauvais marquage ou blanc envahissant</h5>
+                        <h6 class="card-title ">Un mauvais marquage ou blanc envahissant</h6>
                         <h8 class="card-title text-muted">Attention !</h8>
                     </div>
                     <hr>

@@ -4,9 +4,31 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="L'élevage de chien 'De la legende asturienne' vous propose des berger australien pure race, cours particulier afin d'éduquer vos chiens et chiots.">
-    <link rel="icon" type="image/x-icon" href="{{url('public/storage/img/logo.png')}}" />
-    <title>{{ config('app.name', 'Elevage de la legende Asturienne') }}</title>
+    <meta name="description"
+          content="L'élevage de chien 'De la legende asturienne' vous propose des berger australien pure race, cours particulier afin d'éduquer vos chiens et chiots.">
+    <meta name="keywords" content="Elevage berger australien dressage cours d'education chiens chien" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/storage/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/storage/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/storage/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/storage/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/public/storage/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/storage/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/public/storage/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/storage/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/storage/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/public/storage/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/storage/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/public/storage/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/storage/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/public/storage/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/public/storage/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="icon" type="image/x-icon" href="{{url('public/storage/img/logo.png')}}"/>
+    <title>{{ config('app.name') }}</title>
 
     <link rel="stylesheet" type="text/css" href="{{asset('public/css/style.css')}}"/>
 
@@ -33,7 +55,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78539603-3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-78539603-3');
@@ -54,13 +80,14 @@
             </div>
             <div class="col-md-3 col-sm-1  right">
                 @if (auth()->check())
-                <a href="{{route('admin')}}">Admin</a>
+                    <a href="{{route('admin')}}">Admin</a>
                 @endif
                 <a href="https://www.facebook.com/De-La-Legende-Asturienne-101469213959401/?hc_ref=ARTWt0l76u1D_TKFlhUpD-iyBtIpgjDGd_eqZqWML4dP3ohn8gvzWZ1cdN-KvVnP0KM&fref=nf"
                    class="blue" title="Follow us on Facebook"> <i class="fab fa-facebook-square fa-2x"></i></a>
                 <br> <a href="https://www.instagram.com/delalegendeasturienne/" class="blue"
                         title="Follow us on Instagram"><i class="fab fa-instagram fa-2x"></i></a>
-                <br><i class="fab fa-youtube fa-2x blue"></i>
+                <br><a href="https://www.youtube.com/channel/UCjI2c8IZko1BhgXsfz185IA" title="Nous voir sur Youtube"><i
+                        class="fab fa-youtube fa-2x blue"></i></a>
             </div>
         </div>
         <ul class="nav nav-tabs nav-fill blue">
@@ -109,14 +136,14 @@
                 <a class="nav-link {{ Request::is('#') ? 'active' : '' }}" href="#">Cours d'éducation</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ Request::is('about') ? 'active' : '' }}" href="{{route('about')}}">A propos</a>
+                <a class="nav-link {{ Request::is('about') ? 'active' : '' }}" href="{{route('about')}}">À propos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="{{route('contact')}}">Contact</a>
             </li>
-           {{-- <li class="nav-item">
-                <a class="nav-link button alert-success" href="{{route('contact')}}">Mon guide offert</a>
-            </li>--}}
+            {{-- <li class="nav-item">
+                 <a class="nav-link button alert-success" href="{{route('contact')}}">Mon guide offert</a>
+             </li>--}}
         </ul>
     </div>
     {{-- <nav class=" bottom fixed-bottom navbar navbar-dark bg-primary ">
@@ -196,14 +223,17 @@
 
 
                                 </th>
-                                <th><button type="submit" class="btn btn-sm btn-primary">Confirm</button></th>
+                                <th>
+                                    <button type="submit" class="btn btn-sm btn-primary">Confirm</button>
+                                </th>
                                 <th>
                                     <a href="https://www.facebook.com/De-La-Legende-Asturienne-101469213959401/?hc_ref=ARTWt0l76u1D_TKFlhUpD-iyBtIpgjDGd_eqZqWML4dP3ohn8gvzWZ1cdN-KvVnP0KM&fref=nf"
                                        class="blue" title="Follow us on Facebook"> <i
                                             class="fab fa-facebook-square fa-2x"></i></a></th>
                                 <th><a href="https://www.instagram.com/delalegendeasturienne/" class="blue"
                                        title="Follow us on Instagram"><i class="fab fa-instagram fa-2x"></i></a></th>
-                                <th><i class="fab fa-youtube fa-2x blue"></i></th>
+                                <th><a href="https://www.youtube.com/channel/UCjI2c8IZko1BhgXsfz185IA"
+                                       title="Nous voir sur Youtube"><i class="fab fa-youtube fa-2x blue"></i></a></th>
                             </tr>
                         </table>
                     </form>

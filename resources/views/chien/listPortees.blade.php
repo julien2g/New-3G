@@ -49,10 +49,10 @@
                         </br>
                         <div class="row">
                             <div class="col-md-4 col-sm-12">
-                                <strong>Date de saillie : </strong> {{$portee->sex_date}}{{--{{$portee->sex_date->format('d M Y')}}--}}
+                                <strong>Date de saillie : </strong> {{$portee->sex_date->format('d-m-Y')}}{{--{{$portee->sex_date->format('d M Y')}}--}}
                                 </br>
                                 <strong>Naissance @if(!isset($chiots)) prévue @endif
-                                    : </strong> {{$portee->birth_date->format('d M Y')}}
+                                    : </strong> {{$portee->birth_date->format('d-m-Y')}}
 
                             </div>
                             <div class="col-8">

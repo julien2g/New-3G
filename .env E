@@ -1,17 +1,17 @@
 APP_NAME="Élevage de la Légende Asturienne"
 APP_ENV=local
 APP_KEY=base64:IdDz/jHBq9a8kXSEX31HuxdLvXjoeO39RksSEOGHpoI=
-APP_DEBUG=false
-APP_URL=http://https://www.de-la-legende-asturienne.fr
+APP_DEBUG=true
+APP_URL=http://localhost
 
 LOG_CHANNEL=stack
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=u599265756_new3g
-DB_USERNAME='u599265756_new3g'
-DB_PASSWORD='CRtXZazCD4yIsWEjjV'
+DB_DATABASE=g
+DB_USERNAME='root'
+DB_PASSWORD='root'
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file

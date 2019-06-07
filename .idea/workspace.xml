@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e46944e3-a92e-4d9c-960f-31e71fa83dcd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChienController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChienController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/addAlbum.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addAlbum.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/addPortee.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addPortee.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/chien.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/chien.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/album/listAlbums.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/album/listAlbums.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/chien/listPortees.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chien/listPortees.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
@@ -40,8 +36,8 @@
     <session id="1636634629">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="31" />
-          <entry key="project.open.time.1" value="6" />
+          <entry key="project.closed" value="32" />
+          <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.10" value="7" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
@@ -51,20 +47,20 @@
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="7" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="33" />
+          <entry key="project.opened" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="11" />
-          <entry key="env" value="4" />
+          <entry key="env" value="5" />
           <entry key="gitignore" value="8" />
           <entry key="htaccess" value="2" />
           <entry key="jpeg" value="1" />
           <entry key="js" value="2" />
           <entry key="less" value="1" />
           <entry key="md" value="1" />
-          <entry key="php" value="186" />
+          <entry key="php" value="189" />
           <entry key="png" value="3" />
           <entry key="scss" value="1" />
           <entry key="txt" value="1" />
@@ -73,14 +69,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="4" />
-          <entry key="Blade" value="117" />
+          <entry key=".env file" value="5" />
+          <entry key="Blade" value="118" />
           <entry key="CSS" value="11" />
           <entry key="Image" value="4" />
           <entry key="JavaScript" value="2" />
           <entry key="Less" value="1" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="69" />
+          <entry key="PHP" value="71" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="SCSS" value="1" />
           <entry key="XML" value="2" />
@@ -89,10 +85,10 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="659" />
-          <entry key="env" value="42" />
+          <entry key="env" value="64" />
           <entry key="gitignore" value="2" />
           <entry key="htaccess" value="11" />
-          <entry key="php" value="28874" />
+          <entry key="php" value="28991" />
           <entry key="scss" value="24" />
           <entry key="txt" value="15" />
           <entry key="vue" value="23" />
@@ -101,10 +97,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key=".env file" value="42" />
-          <entry key="Blade" value="17714" />
+          <entry key=".env file" value="64" />
+          <entry key="Blade" value="17799" />
           <entry key="CSS" value="659" />
-          <entry key="PHP" value="11160" />
+          <entry key="PHP" value="11192" />
           <entry key="PLAIN_TEXT" value="28" />
           <entry key="SCSS" value="24" />
           <entry key="Vue.js" value="23" />
@@ -124,20 +120,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="217" column="176" selection-start-line="217" selection-start-column="176" selection-end-line="217" selection-end-column="176" />
+            <state relative-caret-position="554">
+              <caret line="48" column="52" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="108" column="105" lean-forward="true" selection-start-line="108" selection-start-column="105" selection-end-line="108" selection-end-column="105" />
+            <state relative-caret-position="420">
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -145,26 +150,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ChienController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="185" column="66" selection-start-line="185" selection-start-column="66" selection-end-line="185" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiots.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+            <state relative-caret-position="419">
+              <caret line="185" column="74" selection-start-line="185" selection-start-column="74" selection-end-line="185" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -172,17 +159,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/chien/listPortees.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="51" column="87" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
+            <state relative-caret-position="317">
+              <caret line="54" column="83" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/addAlbum.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="48" column="77" selection-start-line="48" selection-start-column="77" selection-end-line="48" selection-end-column="77" />
+            <state relative-caret-position="390">
+              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -190,8 +186,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/chien.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="156" column="65" lean-forward="true" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="65" />
+            <state relative-caret-position="2340">
+              <caret line="156" column="65" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -199,7 +195,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/addPortee.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
+            <state relative-caret-position="900">
               <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
             </state>
           </provider>
@@ -263,14 +259,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" />
         <option value="$PROJECT_DIR$/resources/views/layouts/foot.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
         <option value="$PROJECT_DIR$/app/Chien.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Image.php" />
         <option value="$PROJECT_DIR$/resources/views/chien/chiot.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/chien/listFuture.blade.php" />
@@ -308,12 +302,14 @@
         <option value="$PROJECT_DIR$/public/.htaccess" />
         <option value="$PROJECT_DIR$/resources/views/admin/chien.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/addPortee.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/chien/listPortees.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/album/listAlbums.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/addAlbum.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ChienController.php" />
         <option value="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/chien/listPortees.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
       </list>
     </option>
   </component>
@@ -430,6 +426,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -454,6 +452,14 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="new3G" type="b2602c69:ProjectViewProjectNode" />
+              <item name="new3G" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="new3G" type="b2602c69:ProjectViewProjectNode" />
@@ -505,8 +511,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -596,17 +600,19 @@
       <workItem from="1559727792264" duration="4073000" />
       <workItem from="1559748652706" duration="322000" />
       <workItem from="1559749123801" duration="764000" />
-      <workItem from="1559906414993" duration="2433000" />
+      <workItem from="1559906414993" duration="3135000" />
+      <workItem from="1559920870890" duration="1756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226129000" />
+    <option name="totallyTimeSpent" value="228587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17094018" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17277168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -620,7 +626,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.497558" visible="true" weight="0.12959184" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.497558" visible="true" weight="0.12959184" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502442" side_tool="true" weight="0.18979591" />
       <window_info anchor="bottom" id="File Transfer" order="11" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -672,13 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="86" column="67" selection-start-line="86" selection-start-column="67" selection-end-line="86" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -737,13 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -769,13 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="776">
           <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -896,10 +881,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/chien/listPortees.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/addAlbum.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="51" column="87" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
+        <state relative-caret-position="720">
+          <caret line="48" column="77" selection-start-line="48" selection-start-column="77" selection-end-line="48" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/chien.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="156" column="65" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/addPortee.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -910,45 +909,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/chien.blade.php">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="156" column="65" lean-forward="true" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/addPortee.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/addAlbum.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="48" column="77" selection-start-line="48" selection-start-column="77" selection-end-line="48" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="108" column="105" lean-forward="true" selection-start-line="108" selection-start-column="105" selection-end-line="108" selection-end-column="105" />
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ChienController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="185" column="66" selection-start-line="185" selection-start-column="66" selection-end-line="185" selection-end-column="66" />
+        <state relative-caret-position="419">
+          <caret line="185" column="74" selection-start-line="185" selection-start-column="74" selection-end-line="185" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="217" column="176" selection-start-line="217" selection-start-column="176" selection-end-line="217" selection-end-column="176" />
+        <state relative-caret-position="554">
+          <caret line="48" column="52" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/chien/listPortees.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="54" column="83" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
         </state>
       </provider>
     </entry>

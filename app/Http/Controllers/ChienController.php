@@ -183,7 +183,7 @@ class ChienController extends Controller
         $images_rdm = [];
 
         $chien = Chien::where('id', '=', $id)->get();
-        $images = Image::where('id_chien', '=', $id)->get();
+        $images = Image::where('id_chien', '=', $id)->orderBy('pos', 'desc')->get();
 
         $chiens_rdm = Chien::orderByRaw('RAND()')->take(4)->get();
 
@@ -195,19 +195,19 @@ class ChienController extends Controller
             array_push($images_rdm, $img);
         }
 
-        if ($chien[0]->id_portee){
+        if ($chien[0]->id_portee) {
             $portee = Portee::where('id', '=', $chien[0]->id_portee)->get();
 
 
             $dad = Chien::where('id', '=', $portee[0]->id_dad)->first();
             $mom = Chien::where('id', '=', $portee[0]->id_mom)->first();
 
-           $dad_img = Image::where('id_chien', '=', $dad->id)->first();
+            $dad_img = Image::where('id_chien', '=', $dad->id)->first();
             $mom_img = Image::where('id_chien', '=', $mom->id)->first();
 
 
             $parents = [$dad, $mom];
-            $parents_images = [$dad_img,  $mom_img];
+            $parents_images = [$dad_img, $mom_img];
             return view('chien.detailsChien')->with('chien', $chien[0])->with('images', $images)->with('chiens_rdm', $chiens_rdm)->with('images_rdm', $images_rdm)->with('title', $title)->with('parents', $parents)->with('parents_image', $parents_images);
 
         }
@@ -223,16 +223,14 @@ class ChienController extends Controller
         if ($params['id'] == '') // test if need add or modify
         {
             $chien = new Chien();
-        }
-        else
-        {
+        } else {
             $chien = Chien::where('id', '=', $params['id'])->first();
         }
 
         $chien->name = $params['name'];
         $chien->title = $params['title'];
         $chien->adult = $params['adult'];
-        $chien->owner =  $params['owner'];
+        $chien->owner = $params['owner'];
         $chien->own = $params['own'];
         $chien->race = $params['race'];
         $chien->info = $params['info'];
@@ -249,16 +247,15 @@ class ChienController extends Controller
 
     }
 
-    public function addPortee(Request $request){
+    public function addPortee(Request $request)
+    {
 
         $params = $request->except(['_token']);
 
         if ($params['id'] == '') // test if need add or modify
         {
             $portee = new Portee();
-        }
-        else
-        {
+        } else {
             $portee = Portee::where('id', '=', $params['id'])->first();
         }
 
@@ -273,7 +270,7 @@ class ChienController extends Controller
         $portee->save();
 
         return view('admin.admin')->with('success', 'TRUE')->with('msg', 'C\'est noté !');
-        
+
     }
 
 }

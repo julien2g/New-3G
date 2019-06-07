@@ -58,7 +58,7 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-6">
-                        <label for="sex">Date de procréation </label>
+                        <label for="sex">Date de saillie </label>
                         <input type="text" class="form-control" id="sex" name="sex" placeholder=YYYY-MM-DD
                                value="{{isset($portee) ? $portee->sex_date : ''}}" required>
                     </div>

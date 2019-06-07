@@ -154,6 +154,7 @@
         <br><br><br>
     @endif
     @if(isset($chien))
+      Un petit tour sur <a href="https://tinypng.com">Tinypng</a>
         <div class="form-group col-12">
             <form role="form" method="post" action="{{route('upload/image')}}"
                   enctype="multipart/form-data">
@@ -161,7 +162,7 @@
                 <input type="file" name="image[]" multiple="multiple">
                 <input type="hidden" name="folder" value="chiens">
                 <input type="hidden" name="id" value="{{isset($chien) ? $chien->id : ''}}">
-                <button type="submit" class="btn btn-primary" data-buttonText="Browse">Uplaod</button>
+                <button type="submit" class="btn btn-primary" data-buttonText="Browse">Enoyer les images</button>
             </form>
         </div>
 

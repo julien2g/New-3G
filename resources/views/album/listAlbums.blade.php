@@ -31,7 +31,7 @@
                         <p class="text-muted">{{$album->date}}</p>
 
                         <img
-                            src="{{url('/storage/img/pate.png')}}" class="pate" height="100px" width="100px"
+                            src="{{url('public/storage/img/pate.png')}}" class="pate" height="100px" width="100px"
                             alt="Pate de berger australien" title="Voir l'album">
                     </div>
                 </a>

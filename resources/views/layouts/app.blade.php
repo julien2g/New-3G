@@ -106,14 +106,17 @@
                    href="{{route('album/details', ['id' => 3])}}">Nos instalations</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link {{ Request::is('#') ? 'active' : '' }}" href="#">Cours d'éducation</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link {{ Request::is('about') ? 'active' : '' }}" href="{{route('about')}}">A propos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="{{route('contact')}}">Contact</a>
             </li>
-            <li class="nav-item">
+           {{-- <li class="nav-item">
                 <a class="nav-link button alert-success" href="{{route('contact')}}">Mon guide offert</a>
-            </li>
+            </li>--}}
         </ul>
     </div>
     {{-- <nav class=" bottom fixed-bottom navbar navbar-dark bg-primary ">

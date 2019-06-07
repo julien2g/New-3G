@@ -215,7 +215,7 @@
                                             <img src="/public/storage/chiens/{{$image->slug}}{{$image->ext}}"
                                                  class="d-block w-100"
                                                  alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
-                                                 title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
+                                                 title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne. Photo uploadée le : {{$image->created_at}}">
                                         </a>
                                     </div>
                                 @endif

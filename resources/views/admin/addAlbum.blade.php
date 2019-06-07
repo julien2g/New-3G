@@ -46,12 +46,13 @@
                     </div>
 
                     <input type="hidden" name="id" value="{{isset($album) ? $album->id : ''}}">
-                    <button type="submit" class="btn btn-primary">Entrer !
+                    <button type="submit" class="btn btn-primary">Enregistrer !
                     </button>
                 </form>
                 <br>
             </div>
             @if(isset($album))
+                Un petit tour sur <a href="https://tinypng.com">Tinypng</a>
                 <div class="form-group col-6">
                     <form role="form" method="post" action="{{route('upload/image')}}"
                           enctype="multipart/form-data">
@@ -59,7 +60,7 @@
                         <input type="file" name="image[]" multiple="multiple">
                         <input type="hidden" name="folder" value="albums">
                         <input type="hidden" name="id" value="{{isset($album) ? $album->id : ''}}">
-                        <button type="submit" class="btn btn-primary" data-buttonText="Browse">Uplaod</button>
+                        <button type="submit" class="btn btn-primary" data-buttonText="Browse">Envoyer en ligne</button>
                     </form>
                 </div>
 
@@ -71,7 +72,7 @@
                         <input type="text" name="lien" placeholder="http://..." required>
                         <input type="hidden" name="folder" value="albums">
                         <input type="hidden" name="id" value="{{isset($album) ? $album->id : ''}}">
-                        <button type="submit" class="btn btn-primary" data-buttonText="Browse">Uplaod</button>
+                        <button type="submit" class="btn btn-primary" data-buttonText="Browse">Envoyer en ligne</button>
                     </form>
                 </div>
 

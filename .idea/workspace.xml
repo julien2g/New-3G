@@ -596,18 +596,17 @@
       <workItem from="1559727792264" duration="4073000" />
       <workItem from="1559748652706" duration="322000" />
       <workItem from="1559749123801" duration="764000" />
-      <workItem from="1559906414993" duration="2274000" />
+      <workItem from="1559906414993" duration="2433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225970000" />
+    <option name="totallyTimeSpent" value="226129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17094018" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17094018" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -621,7 +620,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.497558" visible="true" weight="0.12959184" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.497558" visible="true" weight="0.12959184" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502442" side_tool="true" weight="0.18979591" />
       <window_info anchor="bottom" id="File Transfer" order="11" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />

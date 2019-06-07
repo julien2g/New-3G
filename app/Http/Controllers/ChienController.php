@@ -183,7 +183,7 @@ class ChienController extends Controller
         $images_rdm = [];
 
         $chien = Chien::where('id', '=', $id)->get();
-        $images = Image::where('id_chien', '=', $id)->orderBy('pos', 'desc')->get();
+        $images = Image::where('id_chien', '=', $id)->get();
 
         $chiens_rdm = Chien::orderByRaw('RAND()')->take(4)->get();
 

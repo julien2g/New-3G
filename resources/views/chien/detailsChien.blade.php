@@ -44,7 +44,7 @@
 
                             <div class="carousel-item  @if($image->pos == 1) active @endif">
                                 <a data-toggle="modal" data-target=".bd-example-modal-xl">
-                                    <img itemprop="image"
+                                    <img
                                         src="/public/storage/chiens/{{$image->slug}}{{$image->ext}}"
                                         class="d-block w-100 "
                                         alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <p class="card-text" itemprop="description">{{$chien->info}}</p>
+                    <p class="card-text " itemprop="description">{{$chien->info}}</p>
                 </div>
             </div>
         </div>

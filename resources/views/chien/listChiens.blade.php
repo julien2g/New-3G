@@ -18,55 +18,43 @@
     </nav>
 
     @foreach($chiens as $key=>$chien )
-        <div class="row">
+        <div class="row" >
             <div class="col-md-6">
-
-
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @foreach($images[$key] as $image)
                             @if($image->id_chien == $chien->id)
-
                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" @if($image->pos == 1) class="active"  @endif></li>
-                               {{-- @else
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>--}}
                             @endif
                         @endforeach
                     </ol>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" itemscope itemtype="http://schema.org/Product">
 
                         @foreach($images[$key] as $image)
                             @if($image->id_chien == $chien->id)
-
                                     <div class="carousel-item @if($image->pos == 1) active @endif">
-                                        <a href="{{route('details', ['id' => "$chien->id"])}}">
-                                            <img src="/public/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                        <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                        <a itemprop="url" href="{{route('details', ['id' => "$chien->id"])}}">
+                                            <img itemprop="image" src="/public/storage/chiens/{{$image->slug}}{{$image->ext}}"
                                                  class="d-block w-100 maxImg"
                                                  alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
                                                  title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
                                         </a>
+                                        </div>
                                     </div>
-                               {{-- @else
-                                    <div class="carousel-item">
-                                        <a href="{{route('details', ['id' => "$chien->id"])}}">
-                                            <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
-                                                 class="d-block w-100 maxImg"
-                                                 alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
-                                                 title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
-                                        </a>
-                                    </div>--}}
                             @endif
                         @endforeach
                     </div>
-
                 </div>
             </div>
-            <div class="card-body center col-md-6 ">
-                <h5 class="card-title">{{$chien->name}}</h5>
+            <div class="card-body center col-md-6" itemscope itemtype="http://schema.org/Product">
+                <h5 class="card-title" itemprop="name">{{$chien->name}}</h5>
                 <p class="text-muted">{{$chien->race}}</p>
                 <hr>
                 <p class="card-text">{{$chien->info}}</p>
-                <a href="{{route('details', ['id' => "$chien->id"])}}" class="btn btn-primary">Plus de détails</a>
+                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <a itemprop="url" href="{{route('details', ['id' => "$chien->id"])}}" class="btn btn-primary">Plus de détails</a>
+                </div>
             </div>
         </div>
 

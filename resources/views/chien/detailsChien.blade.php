@@ -25,7 +25,7 @@
 
     <hr>
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" itemscope itemtype="http://schema.org/Product">
         <div class="col-8 ">
             <!--Caroussel-->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -42,10 +42,9 @@
                     @foreach($images as $image)
                         @if($image->id_chien == $chien->id)
 
-                            <div class="carousel-item  @if($image->pos == 1) active @endif
-                                ">
+                            <div class="carousel-item  @if($image->pos == 1) active @endif">
                                 <a data-toggle="modal" data-target=".bd-example-modal-xl">
-                                    <img
+                                    <img itemprop="image"
                                         src="/public/storage/chiens/{{$image->slug}}{{$image->ext}}"
                                         class="d-block w-100 "
                                         alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
@@ -74,13 +73,13 @@
         <div class="col-md-6 col-sm-12">
             <div class="card">
                 <div class="card-header">
-                    <div class="center">
-                        <h4>{{$chien->name}}</h4>
+                    <div class="center" itemscope itemtype="http://schema.org/Product">
+                        <h4 itemprop="name">{{$chien->name}}</h4>
                         <h6 class="text-muted">{{$chien->race}} </h6>
                     </div>
                 </div>
                 <div class="card-body">
-                    <p class="card-text ">{{$chien->info}}</p>
+                    <p class="card-text" itemprop="description">{{$chien->info}}</p>
                 </div>
             </div>
         </div>

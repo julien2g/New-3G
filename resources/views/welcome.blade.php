@@ -2,14 +2,14 @@
 
 @section('content')
     <h3 class="center">Actualitées</h3>
-    <div class="row">
+    <div class="row" itemscope itemtype="http://schema.org/Organization">
         @foreach($news as $n)
-            <div class="jumbotron col-12">
-                <h3>{{$n->title}}</h3>
+            <div class="jumbotron col-12" itemprop="event">
+                <h4>{{$n->title}}</h4>
 
                 <hr class="my-4">
                 <p>{{$n->text}}</p>
-                <p class="right">{{$n->date}}</p>
+                <p class="right" >{{$n->date}}</p>
             </div>
         @endforeach
     </div>
@@ -20,22 +20,22 @@
     </div>
     <hr>
 
-    <div class="row">
-        <div class="col-12 ">
-            <h1 class="page-header center">Les premiers <strong>Bergers Australiens</strong> qui nous ont donné envie de
+    <div class="row" itemscope itemtype="http://schema.org/Organization">
+        <div class="col-12" >
+            <h1 class="page-header center">Les premiers <strong itemprop="owns">Bergers Australiens</strong> qui nous ont donné envie de
                 devenir <strong>éleveurs canins</strong></h1>
         </div>
         <div class="col-md-6 col-sm-12">
             <p>C’est grâce à ces trois grosses boules de poils que nous avons eu envie de partager notre amour pour les
-                <strong>Bergers Australiens</strong>.</p>
+                <strong itemprop="owns">Bergers Australiens</strong>.</p>
 
-            <p>C’est une <strong>race de chien</strong> qui peut tout à fait convenir comme chien de famille mais
+            <p>C’est une <strong itemprop="owns">race de chien</strong> qui peut tout à fait convenir comme chien de famille mais
                 également comme chien de travail.</p>
 
-            <p><strong>Les Bergers Australiens</strong> aiment toutes sortes d’activités comme l’agility, le dog dance
+            <p><strong itemprop="owns">Les Bergers Australiens</strong> aiment toutes sortes d’activités comme l’agility, le dog dance
                 et de manière générale tout ce que son maître partagera de positif avec lui.</p>
 
-            <p>Cette race de chien est très présente également dans les <strong>expositions canines</strong>. Il existe
+            <p>Cette race de chien est très présente également dans les <strong itemprop="event">expositions canines</strong>. Il existe
                 plusieurs couleurs de robe telles que <strong>le noir tricolore, le rouge tricolore, le bleu merle ou
                     encore le rouge merle</strong>. Leurs yeux peuvent être bleus, marrons ou même vairons (un oeil de
                 chaque couleur).</p>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="card-body">
                     <div class="minCardTitle">
-                        <h5 class="card-title">Adopter un animal de compagnie</h5>
+                        <h6 class="card-title">Adopter un animal de compagnie</h6>
                         <h8 class="card-title text-muted">C'est pour le vie !</h8>
                     </div>
                     <hr>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="card-body">
                     <div class="minCardTitle">
-                        <h5 class="card-title ">Les besoins des berger australiens</h5>
+                        <h6 class="card-title ">Les besoins des berger australiens</h6>
                     </div>
                     <hr>
                     <h8 class="card-title ">Ce sont des
@@ -113,7 +113,7 @@
                 </div>
                 <div class="card-body">
                     <div class="minCardTitle">
-                        <h5 class="card-title ">Un mauvais marquage ou blanc envahissant</h5>
+                        <h6 class="card-title ">Un mauvais marquage ou blanc envahissant</h6>
                         <h8 class="card-title text-muted">Attention !</h8>
                     </div>
                     <hr>

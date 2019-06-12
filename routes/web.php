@@ -11,9 +11,19 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::get('/', [
+    'as' => '/',
+    'uses' => 'HomeController@Home'
+]);
+
+Route::get('/home', [
+    'as' => '/home',
+    'uses' => 'HomeController@Home'
+]);
 
 Route::get('/', [
     'as' => '/',

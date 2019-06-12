@@ -56,6 +56,9 @@ class ChienController extends Controller
 
         $chiens = Chien::where('owner', '!=', 0)->get();
 
+
+
+
         foreach ($chiens as $key => $chien) {
             $image = Image::where('id_chien', '=', $chien->id)->limit(4)->get();
 

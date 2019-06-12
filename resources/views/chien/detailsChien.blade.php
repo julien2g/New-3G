@@ -79,14 +79,14 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <p class="card-text " itemprop="description">{{$chien->info}}</p>
+                    <p class="card-text " itemprop="description">{{nl2br($chien->info)}}</p>
                 </div>
             </div>
         </div>
 
         <div class="col-md-6 col-sm-12">
             <h4 class="text-muted center">{{$chien->title}} </h4>
-            <div class="card text-center">
+            <div class="card ">
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs">
                         <li class="nav-item">
@@ -115,17 +115,17 @@
                 </div>
                 <div class="card-body {{ $title == 'expostions' || $title == '' ? '' : 'd-none' }}">
 
-                    <p class="card-text">{{$chien->expositions}}</p>
+                    <p class="card-text">{{nl2br($chien->expositions)}}</p>
 
                 </div>
                 <div class="card-body {{ $title == 'concours' ? '' : 'd-none' }}">
 
-                    <p class="card-text">{{$chien->awards}}</p>
+                    <p class="card-text">{{nl2br($chien->awards)}}</p>
 
                 </div>
                 <div class="card-body {{ $title == 'analyses' ? '' : 'd-none' }}">
 
-                    <p class="card-text">{{$chien->analyses}}</p>
+                    <p class="card-text">{{nl2br($chien->analyses)}}</p>
 
                 </div>
                 @if(($chien->id_portee))

@@ -205,6 +205,13 @@ Route::group(['middleware' => 'admin'], function () {
         'uses' => 'ChienController@addPortee'
     ]);
 
+    Route::get('/admin/update/pos', [
+        'as' => 'admin/update/pos',
+        'uses' => 'UploadController@updatePos'
+    ]);
+
+
+
 });
 
 

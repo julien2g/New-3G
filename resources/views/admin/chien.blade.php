@@ -98,7 +98,8 @@
 
                         @if(isset($parents))
                             @foreach($parents as $key=>$parent)
-                                <option value="{{$portees[$key]->id}}">{{$parent['dad']->name}}---X---{{$parent['mom']->name}}</option>
+                                <option value="{{$portees[$key]->id}}">{{$parent['dad']->name}}
+                                    ---X---{{$parent['mom']->name}}</option>
                             @endforeach
                         @endif
                     </select>
@@ -154,7 +155,13 @@
         <br><br><br>
     @endif
     @if(isset($chien))
-      Un petit tour sur <a href="https://tinypng.com">Tinypng</a>
+
+
+        <div class="row">
+            <div class="alert alert-success col-12" role="alert">
+                Un petit tour sur <a href="https://tinypng.com">Tinypng</a>
+            </div>
+        </div>
         <div class="form-group col-12">
             <form role="form" method="post" action="{{route('upload/image')}}"
                   enctype="multipart/form-data">
@@ -162,6 +169,7 @@
                 <input type="file" name="image[]" multiple="multiple">
                 <input type="hidden" name="folder" value="chiens">
                 <input type="hidden" name="id" value="{{isset($chien) ? $chien->id : ''}}">
+                <input type="hidden" name="name" value="{{isset($chien) ? $chien->name : ''}}">
                 <button type="submit" class="btn btn-primary" data-buttonText="Browse">Enoyer les images</button>
             </form>
         </div>
@@ -179,13 +187,16 @@
                                          src="/public/storage/chiens/{{$image->slug}}{{$image->ext}}"
                                          alt="Album : {{$chien->name}}">
                                     <div class="card-body center">
-                                        {{--<input name="pos"  class="col-1" value="{{$image->pos}}">--}}
-                                        @if($image->pos != 1)
-                                            <a href="{{route('delete/image', ['folder' => 'chiens', 'id_folder' => $chien->id, 'id_image' => $image->id, 'slug' => $image->slug . '' . $image->ext])}}"
-                                               title="Suprimer l'image">
-                                                <button class="btn btn-danger btn-sm">X</button>
-                                            </a>
-                                        @endif
+                                        <form action="{{route('admin/update/pos')}}" method="get">
+                                            <input class="input_style" type="number" name="pos" value="{{$image->pos}}">
+                                            <input type="hidden" name="id" value="{{$image->id}}">
+                                            <input type="hidden" name="folder" value="chiens">
+                                            <input type="hidden" name="id_folder" value="{{$chien->id}}">
+                                        </form>
+                                        <a href="{{route('delete/image', ['folder' => 'chiens', 'id_folder' => $chien->id, 'id_image' => $image->id, 'slug' => $image->slug . '' . $image->ext])}}"
+                                           title="Suprimer l'image">
+                                            <button class="btn btn-danger btn-sm">X</button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

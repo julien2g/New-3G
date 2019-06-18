@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <p class="card-text " itemprop="description">{{nl2br($chien->info)}}</p>
+                    <p class="card-text " itemprop="description">{{htmlentities($chien->info)}}</p>
                 </div>
             </div>
         </div>
@@ -115,17 +115,17 @@
                 </div>
                 <div class="card-body {{ $title == 'expostions' || $title == '' ? '' : 'd-none' }}">
 
-                    <p class="card-text">{{nl2br($chien->expositions)}}</p>
+                    <p class="card-text">{{htmlentities($chien->expositions)}}</p>
 
                 </div>
                 <div class="card-body {{ $title == 'concours' ? '' : 'd-none' }}">
 
-                    <p class="card-text">{{nl2br($chien->awards)}}</p>
+                    <p class="card-text">{{htmlentities($chien->awards)}}</p>
 
                 </div>
                 <div class="card-body {{ $title == 'analyses' ? '' : 'd-none' }}">
 
-                    <p class="card-text">{{nl2br($chien->analyses)}}</p>
+                    <p class="card-text">{{htmlentities($chien->analyses)}}</p>
 
                 </div>
                 @if(($chien->id_portee))

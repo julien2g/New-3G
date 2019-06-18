@@ -18,7 +18,7 @@ class UploadController extends Controller
         $params = $request->except(['_token']);
 
         foreach ($params['image'] as $img) { // For each img upload
-            $slug = $params['id'] . '___' . $this->generateRandomString(5); // Give name
+            $slug = $params['id'] . '_' .  $params['name'] . '_' . $this->generateRandomString(5); // Give name
 
             $img->storeAs('/public/' . $params['folder'], $slug . '.' . $img->getClientOriginalExtension()); // Store imgWith the name "Slug"
 
@@ -79,7 +79,8 @@ class UploadController extends Controller
     }
 
 
-    public function uploadVideo(Request $request){
+    public function uploadVideo(Request $request)
+    {
 
         $params = $request->except(['_token']);
 
@@ -108,4 +109,22 @@ class UploadController extends Controller
         }
         return $randomString;
     }
+
+    public function updatePos(Request $request)
+    {
+        $params = $request->except(['_token']);
+
+        if ($params['folder'] == 'chiens') {
+            $image = Image::where('id', $params['id'])->first();
+
+            $image->pos = $params['pos'];
+
+            $image->save();
+        }
+
+        return redirect('admin/modify/' . $params['folder'] . '/vue/filled?id=' . $params['id_folder']);
+    }
+
+
+
 }

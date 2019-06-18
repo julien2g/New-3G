@@ -60,6 +60,7 @@
                         <input type="file" name="image[]" multiple="multiple">
                         <input type="hidden" name="folder" value="albums">
                         <input type="hidden" name="id" value="{{isset($album) ? $album->id : ''}}">
+                        <input type="hidden" name="name" value="{{isset($album) ? $album->name : ''}}">
                         <button type="submit" class="btn btn-primary" data-buttonText="Browse">Envoyer en ligne</button>
                     </form>
                 </div>

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e46944e3-a92e-4d9c-960f-31e71fa83dcd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/explaination.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/explaination.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/IoUot6GmN6pQHt92B97bIAAekbKWw18NfZFVFVvu" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/IoUot6GmN6pQHt92B97bIAAekbKWw18NfZFVFVvu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/af80084fbc0f804031e78481f55083e415c6d9de.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/af80084fbc0f804031e78481f55083e415c6d9de.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,8 +165,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="122" column="55" selection-start-line="122" selection-start-column="43" selection-end-line="122" selection-end-column="55" />
+            <state relative-caret-position="243">
+              <caret line="81" column="67" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -308,10 +306,10 @@
         <option value="$PROJECT_DIR$/resources/views/admin/addAlbum.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/chien.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UploadController.php" />
-        <option value="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/explaination.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" />
       </list>
     </option>
   </component>
@@ -647,18 +645,18 @@
       <workItem from="1559981701844" duration="3385000" />
       <workItem from="1560332336732" duration="1760000" />
       <workItem from="1560419731559" duration="3531000" />
-      <workItem from="1560822788810" duration="5413000" />
+      <workItem from="1560822788810" duration="6150000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246170000" />
+    <option name="totallyTimeSpent" value="246907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18192919" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18192919" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -672,7 +670,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.497558" visible="true" weight="0.20918368" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.497558" visible="true" weight="0.20918368" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502442" side_tool="true" weight="0.18979591" />
       <window_info anchor="bottom" id="File Transfer" order="11" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1024,8 +1022,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="122" column="55" selection-start-line="122" selection-start-column="43" selection-end-line="122" selection-end-column="55" />
+        <state relative-caret-position="243">
+          <caret line="81" column="67" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
         </state>
       </provider>
     </entry>

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e46944e3-a92e-4d9c-960f-31e71fa83dcd" name="Default Changelist" comment="" />
+    <list default="true" id="e46944e3-a92e-4d9c-960f-31e71fa83dcd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/views/explaination.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/explaination.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/IoUot6GmN6pQHt92B97bIAAekbKWw18NfZFVFVvu" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/IoUot6GmN6pQHt92B97bIAAekbKWw18NfZFVFVvu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/af80084fbc0f804031e78481f55083e415c6d9de.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/af80084fbc0f804031e78481f55083e415c6d9de.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +59,7 @@
           <entry key="js" value="2" />
           <entry key="less" value="1" />
           <entry key="md" value="1" />
-          <entry key="php" value="215" />
+          <entry key="php" value="216" />
           <entry key="png" value="3" />
           <entry key="scss" value="2" />
           <entry key="txt" value="1" />
@@ -65,7 +69,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="11" />
-          <entry key="Blade" value="131" />
+          <entry key="Blade" value="132" />
           <entry key="CSS" value="12" />
           <entry key="Image" value="4" />
           <entry key="JavaScript" value="2" />
@@ -83,7 +87,7 @@
           <entry key="env" value="139" />
           <entry key="gitignore" value="22" />
           <entry key="htaccess" value="11" />
-          <entry key="php" value="29735" />
+          <entry key="php" value="29780" />
           <entry key="scss" value="24" />
           <entry key="txt" value="15" />
           <entry key="vue" value="23" />
@@ -93,7 +97,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="139" />
-          <entry key="Blade" value="18237" />
+          <entry key="Blade" value="18282" />
           <entry key="CSS" value="677" />
           <entry key="PHP" value="11498" />
           <entry key="PLAIN_TEXT" value="48" />
@@ -115,7 +119,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -160,11 +164,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="127" column="55" selection-start-line="127" selection-start-column="55" selection-end-line="127" selection-end-column="55" />
+            <state relative-caret-position="429">
+              <caret line="122" column="55" selection-start-line="122" selection-start-column="43" selection-end-line="122" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -179,19 +183,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiots.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+            <state relative-caret-position="-125">
+              <caret line="32" column="64" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/explaination.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="32" column="64" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="64" />
+            <state relative-caret-position="2265">
+              <caret line="151" column="117" lean-forward="true" selection-start-line="151" selection-start-column="117" selection-end-line="151" selection-end-column="117" />
             </state>
           </provider>
         </entry>
@@ -280,7 +284,6 @@
         <option value="$PROJECT_DIR$/storage/app/public/.gitignore" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/resources/views/explaination.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/about.blade.php" />
         <option value="$PROJECT_DIR$/sitemap.xml" />
         <option value="$PROJECT_DIR$/robots.txt" />
@@ -308,6 +311,7 @@
         <option value="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/views/explaination.blade.php" />
       </list>
     </option>
   </component>
@@ -643,17 +647,18 @@
       <workItem from="1559981701844" duration="3385000" />
       <workItem from="1560332336732" duration="1760000" />
       <workItem from="1560419731559" duration="3531000" />
-      <workItem from="1560822788810" duration="4236000" />
+      <workItem from="1560822788810" duration="5413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244993000" />
+    <option name="totallyTimeSpent" value="246170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18192919" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18192919" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -667,7 +672,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.497558" visible="true" weight="0.20918368" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.497558" visible="true" weight="0.20918368" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502442" side_tool="true" weight="0.18979591" />
       <window_info anchor="bottom" id="File Transfer" order="11" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -926,13 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/explaination.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/chien/listChiens.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -989,20 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="127" column="55" selection-start-line="127" selection-start-column="55" selection-end-line="127" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="32" column="64" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1021,6 +1005,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="32" column="64" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/explaination.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2265">
+          <caret line="151" column="117" lean-forward="true" selection-start-line="151" selection-start-column="117" selection-end-line="151" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="122" column="55" selection-start-line="122" selection-start-column="43" selection-end-line="122" selection-end-column="55" />
         </state>
       </provider>
     </entry>

@@ -171,6 +171,7 @@
                 <input type="file" name="image[]" multiple="multiple">
                 <input type="hidden" name="folder" value="chiens">
                 <input type="hidden" name="id" value="<?php echo e(isset($chien) ? $chien->id : ''); ?>">
+                <input type="hidden" name="name" value="<?php echo e(isset($chien) ? $chien->name : ''); ?>">
                 <button type="submit" class="btn btn-primary" data-buttonText="Browse">Enoyer les images</button>
             </form>
         </div>

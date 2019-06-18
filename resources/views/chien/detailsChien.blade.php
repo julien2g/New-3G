@@ -120,7 +120,7 @@
                 </div>
                 <div class="card-body {{ $title == 'concours' ? '' : 'd-none' }}">
 
-                    <p class="card-text">{{htmlentities($chien->awards)}}</p>
+                    <p class="card-text">{{nl2br($chien->awards)}}</p>
 
                 </div>
                 <div class="card-body {{ $title == 'analyses' ? '' : 'd-none' }}">

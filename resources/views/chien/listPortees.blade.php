@@ -11,11 +11,13 @@
                             <div class="col-md-6 col-sm-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <img
-                                            src="/public/storage/chiens/{{$images[$key]["dad"]->slug}}{{$images[$key]["dad"]->ext}}"
-                                            class="d-block w-100"
-                                            alt="{{$parents[$key]["dad"]->name}} de l'élevage de {{$parents[$key]["dad"]->race}} : De la légende asturienne"
-                                            title="{{$parents[$key]["dad"]->name}} de l'élevage de {{$parents[$key]["dad"]->race}} : De la légende asturienne">
+                                        @if(isset($images[$key]["dad"]))
+                                            <img
+                                                src="/public/storage/chiens/{{$images[$key]["dad"]->slug}}{{$images[$key]["dad"]->ext}}"
+                                                class="d-block w-100"
+                                                alt="{{$parents[$key]["dad"]->name}} de l'élevage de {{$parents[$key]["dad"]->race}} : De la légende asturienne"
+                                                title="{{$parents[$key]["dad"]->name}} de l'élevage de {{$parents[$key]["dad"]->race}} : De la légende asturienne">
+                                        @endif
 
                                         <h5 class="card-title">{{{$parents[$key]["dad"]->name}}}</h5>
                                         <p class="text-muted">{{$parents[$key]["dad"]->race}}</p>
@@ -30,12 +32,13 @@
                             <div class="col-md-6  col-sm-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <img
-                                            src="/public/storage/chiens/{{$images[$key]["mom"]->slug}}{{$images[$key]["mom"]->ext}}"
-                                            class="d-block w-100"
-                                            alt="{{$parents[$key]["mom"]->name}} de l'élevage de {{$parents[$key]["mom"]->race}} : De la légende asturienne"
-                                            title="{{$parents[$key]["mom"]->name}} de l'élevage de {{$parents[$key]["mom"]->race}} : De la légende asturienne">
-
+                                        @if(isset($images[$key]["mom"]))
+                                            <img
+                                                src="/public/storage/chiens/{{$images[$key]["mom"]->slug}}{{$images[$key]["mom"]->ext}}"
+                                                class="d-block w-100"
+                                                alt="{{$parents[$key]["mom"]->name}} de l'élevage de {{$parents[$key]["mom"]->race}} : De la légende asturienne"
+                                                title="{{$parents[$key]["mom"]->name}} de l'élevage de {{$parents[$key]["mom"]->race}} : De la légende asturienne">
+                                        @endif
                                         <h5 class="card-title">{{$parents[$key]["mom"]->name}}</h5>
                                         <p class="text-muted">{{$parents[$key]["dad"]->race}}</p>
                                         <p class="text-muted">Femelle</p>
@@ -49,7 +52,8 @@
                         </br>
                         <div class="row">
                             <div class="col-md-4 col-sm-12">
-                                <strong>Date de saillie : </strong> {{$portee->sex_date->format('d-m-Y')}}{{--{{$portee->sex_date->format('d M Y')}}--}}
+                                <strong>Date de saillie
+                                    : </strong> {{$portee->sex_date->format('d-m-Y')}}{{--{{$portee->sex_date->format('d M Y')}}--}}
                                 </br>
                                 <strong>Naissance @if(!isset($chiots)) prévue @endif
                                     : </strong> {{$portee->birth_date->format('d-m-Y')}}

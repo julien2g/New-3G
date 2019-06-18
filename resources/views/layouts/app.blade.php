@@ -92,7 +92,7 @@
         </div>
         <ul class="nav nav-tabs nav-fill blue">
             <li class="nav-item">
-                <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Acceuil</a>
+                <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Accueil</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"

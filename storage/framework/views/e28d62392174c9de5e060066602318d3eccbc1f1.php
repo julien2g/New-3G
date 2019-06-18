@@ -3,11 +3,11 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Acceuil</a></li>
 
-            <li class="breadcrumb-item active" aria-current="page">Nos chios</li>
+            <li class="breadcrumb-item active" aria-current="page">Nos chiots</li>
 
         </ol>
     </nav>
-    <h3 class="center">Nos petite boules de poils</h3>
+    <h3 class="center">Nos petites boules de poils</h3>
     <div class="row">
         <?php $__currentLoopData = $chiens; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key=>$chien): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 
@@ -39,7 +39,6 @@
                                                      title="<?php echo e($chien->name); ?> de l'élevage de <?php echo e($chien->race); ?> : De la légende asturienne">
                                             </a>
                                         </div>
-                                    
 
 
                                 <?php endif; ?>
@@ -59,11 +58,9 @@
             <hr>
 
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-        <div class="row">
-            <div class="center ">
+            <div >
                 <?php echo e($chiens->links()); ?>
 
-            </div>
         </div>
     </div>
 <?php $__env->stopSection(); ?>

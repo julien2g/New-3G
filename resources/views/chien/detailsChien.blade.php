@@ -4,7 +4,7 @@
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Acceuil</a></li>
+            <li class="breadcrumb-item"><a href="/">Accueil</a></li>
             @if($chien->sex == 1 && $chien->adult == 1 && $chien->own == 1)
                 <li class="breadcrumb-item"><a href="{{route('chiens/males')}}">Nos mâles</a></li>
             @elseif ($chien->sex == 0 && $chien->adult == 1 && $chien->own == 1)

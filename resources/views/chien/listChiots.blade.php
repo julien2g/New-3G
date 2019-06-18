@@ -9,7 +9,7 @@
 
         </ol>
     </nav>
-    <h3 class="center">Nos petite boules de poils</h3>
+    <h3 class="center">Nos petites boules de poils</h3>
     <div class="row">
         @foreach($chiens as $key=>$chien )
 
@@ -42,15 +42,6 @@
                                                      title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
                                             </a>
                                         </div>
-                                    {{--@else
-                                        <div class="carousel-item">
-                                            <a href="{{route('details', ['id' => "$chien->id"])}}">
-                                                <img src="/storage/chiens/{{$image->slug}}{{$image->ext}}"
-                                                     class="d-block w-100 maxImg"
-                                                     alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
-                                                     title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
-                                            </a>
-                                        </div>--}}
 
 
                                 @endif
@@ -70,10 +61,8 @@
             <hr>
 
         @endforeach
-        <div class="row">
-            <div class="center ">
+            <div>
                 {{$chiens->links()}}
-            </div>
         </div>
     </div>
 @endsection

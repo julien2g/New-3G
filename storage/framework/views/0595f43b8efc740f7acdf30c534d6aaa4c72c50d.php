@@ -30,7 +30,7 @@
     <link rel="icon" type="image/x-icon" href="<?php echo e(url('public/storage/img/logo.png')); ?>"/>
     <title><?php echo e(config('app.name')); ?></title>
 
-    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/style.css')); ?>"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('public/css/style.css')); ?>"/>
 
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"

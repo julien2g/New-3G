@@ -113,17 +113,17 @@
                 </div>
                 <div class="card-body <?php echo e($title == 'expostions' || $title == '' ? '' : 'd-none'); ?>">
 
-                    <p class="card-text"><?php echo e(nl2br($chien->expositions)); ?></p>
+                    <p class="card-text"><?php echo e(htmlentities($chien->expositions)); ?></p>
 
                 </div>
                 <div class="card-body <?php echo e($title == 'concours' ? '' : 'd-none'); ?>">
 
-                    <p class="card-text"><?php echo e(nl2br($chien->awards)); ?></p>
+                    <p class="card-text"><?php echo e(htmlentities($chien->awards)); ?></p>
 
                 </div>
                 <div class="card-body <?php echo e($title == 'analyses' ? '' : 'd-none'); ?>">
 
-                    <p class="card-text"><?php echo e(nl2br($chien->analyses)); ?></p>
+                    <p class="card-text"><?php echo e(htmlentities($chien->analyses)); ?></p>
 
                 </div>
                 <?php if(($chien->id_portee)): ?>

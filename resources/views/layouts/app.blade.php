@@ -30,7 +30,7 @@
     <link rel="icon" type="image/x-icon" href="{{url('public/storage/img/logo.png')}}"/>
     <title>{{ config('app.name') }}</title>
 
-    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('public/css/style.css')}}"/>
 
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"

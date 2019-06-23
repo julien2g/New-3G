@@ -130,7 +130,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link <?php echo e(Request::is('album/details/3') ? 'active' : ''); ?> "
-                   href="<?php echo e(route('album/details', ['id' => 3])); ?>">Nos instalations</a>
+                   href="<?php echo e(route('album/details', ['id' => 3])); ?>">Nos installations</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link <?php echo e(Request::is('#') ? 'active' : ''); ?>" href="#">Cours d'éducation</a>

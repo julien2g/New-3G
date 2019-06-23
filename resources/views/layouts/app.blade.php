@@ -130,7 +130,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('album/details/3') ? 'active' : '' }} "
-                   href="{{route('album/details', ['id' => 3])}}">Nos instalations</a>
+                   href="{{route('album/details', ['id' => 3])}}">Nos installations</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('#') ? 'active' : '' }}" href="#">Cours d'éducation</a>

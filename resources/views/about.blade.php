@@ -120,8 +120,8 @@
                 <div class="col-md-6">
                     <div class="card-body">
                         <h5 class="card-title">Le pont de covadonga</h5>
-                        <p class="card-text">Voila le pont le plus representatif de notre si belle region avec la crois
-                            des asturies suspendu au millieux. </p>
+                        <p class="card-text">Voilà le pont le plus représentatif de notre si belle région avec la croix
+                            de la victoire suspendue au milieu. </p>
                     </div>
                 </div>
             </div>
@@ -134,11 +134,11 @@
 
                 <div class="col-md-6">
                     <div class="card-body">
-                        <h5 class="card-title">L'oreo</h5>
-                        <p class="card-text">En voila une bonne invention, à votre avis, que cela pourrait bien être ?
-                            En faite cette cabane et le fruit de recherches abouti, cela sert à stocker les ressourses.
-                            Mais si vous faite bien attention les marches sont bien eloigné de la cabanne de tel sorte à
-                            evité que n'importe quel animal ne puisse entrer et, devorer les ressources stocké.
+                        <h5 class="card-title">L'horreo</h5>
+                        <p class="card-text">En voilà une bonne invention, à votre avis, que cela pourrait-il bien être ?<br />
+                            En fait cette cabane et le fruit de recherches abouties, cela sert à stocker les ressourses.
+                            Mais si vous faites bien attention, les marches sont bien eloignées de la cabanne de telle sorte à
+                            éviter que n'importe quel animal ne puisse entrer et dévorer les ressources stockées.
                         </p>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
                 <div class="col-md-6">
                     <div class="card-body">
                         <h5 class="card-title">Le cidre</h5>
-                        <p class="card-text">Le cidre de la region des Asturie est fameux pour son tres bon goût tres frais servis dans l'emblematique verre des asturies.</p>
+                        <p class="card-text">Le cidre de la region des Asturies est fameux pour son très bon goût très frais servi dans l'emblématique verre des Asturies.</p>
                     </div>
                 </div>
             </div>

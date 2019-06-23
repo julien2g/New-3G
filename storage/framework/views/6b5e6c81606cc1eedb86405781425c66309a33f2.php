@@ -2,7 +2,7 @@
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Acceuil</a></li>
+            <li class="breadcrumb-item"><a href="/">Accueil</a></li>
             <?php if($chien->sex == 1 && $chien->adult == 1 && $chien->own == 1): ?>
                 <li class="breadcrumb-item"><a href="<?php echo e(route('chiens/males')); ?>">Nos mâles</a></li>
             <?php elseif($chien->sex == 0 && $chien->adult == 1 && $chien->own == 1): ?>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <p class="card-text " itemprop="description"><?php echo e(htmlentities($chien->info)); ?></p>
+                    <p class="card-text " itemprop="description"><?php echo e(($chien->info)); ?></p>
                 </div>
             </div>
         </div>
@@ -113,17 +113,17 @@
                 </div>
                 <div class="card-body <?php echo e($title == 'expostions' || $title == '' ? '' : 'd-none'); ?>">
 
-                    <p class="card-text"><?php echo e(htmlentities($chien->expositions)); ?></p>
+                    <p class="card-text"><?php echo e(($chien->expositions)); ?></p>
 
                 </div>
                 <div class="card-body <?php echo e($title == 'concours' ? '' : 'd-none'); ?>">
 
-                    <p class="card-text"><?php echo e(htmlentities($chien->awards)); ?></p>
+                    <p class="card-text"><?php echo e(($chien->awards)); ?></p>
 
                 </div>
                 <div class="card-body <?php echo e($title == 'analyses' ? '' : 'd-none'); ?>">
 
-                    <p class="card-text"><?php echo e(htmlentities($chien->analyses)); ?></p>
+                    <p class="card-text"><?php echo e(($chien->analyses)); ?></p>
 
                 </div>
                 <?php if(($chien->id_portee)): ?>
@@ -157,7 +157,7 @@
     <hr>
 
     <div class="row justify-content-center">
-        <h4 class="blue">Envie de voir à quoi ressemble nos autre chiens ? </h4>
+        <h4 class="blue">Envie de voir à quoi ressemble nos autres chiens ? </h4>
     </div>
 
     <br>

@@ -12,6 +12,21 @@
     <h3 class="center">Nos petites boules de poils</h3>
     <div class="row">
         @foreach($chiens as $key=>$chien )
+            @if(!isset($chiens))
+                <h3 class="center">Prochainement</h3>
+                <div class="row">
+                        <div class="jumbotron col-12">
+                            <h4>Nous n'avons actuellement aucun chiot disponible</h4>
+
+                            <hr class="my-4">
+                            <p>Nous n'avons actuellement aucun chiot dispible.</p>
+                            <p>Revenez nous voir bientôt.</p>
+                            <p>Vous pouvez égalemement <a href="/contact">nous contacter</a></p>
+
+                        </div>
+                </div>
+            @endif
+
 
             <div class="col-6">
                 <div class="col-md-12">
@@ -20,8 +35,8 @@
                             @foreach($images[$key] as $image)
                                 @if($image->id_chien == $chien->id)
 
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                            @if($image->pos == 1) class="active" @endif></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                        @if($image->pos == 1) class="active" @endif></li>
                                     {{--@else
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>--}}
 
@@ -34,14 +49,14 @@
                             @foreach($images[$key] as $image)
                                 @if($image->id_chien == $chien->id)
 
-                                        <div class="carousel-item  @if($image->pos == 1) active" @endif>
-                                            <a href="{{route('details', ['id' => "$chien->id"])}}">
-                                                <img src="/public/storage/chiens/{{$image->slug}}{{$image->ext}}"
-                                                     class="d-block w-100 maxImg"
-                                                     alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
-                                                     title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
-                                            </a>
-                                        </div>
+                                    <div class="carousel-item  @if($image->pos == 1) active" @endif>
+                                        <a href="{{route('details', ['id' => "$chien->id"])}}">
+                                            <img src="/public/storage/chiens/{{$image->slug}}{{$image->ext}}"
+                                                 class="d-block w-100 maxImg"
+                                                 alt="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne"
+                                                 title="{{$chien->name}} de l'élevage de {{$chien->race}} : De la légende asturienne">
+                                        </a>
+                                    </div>
 
 
                                 @endif
@@ -61,8 +76,8 @@
             <hr>
 
         @endforeach
-            <div>
-                {{$chiens->links()}}
+        <div>
+            {{$chiens->links()}}
         </div>
     </div>
 @endsection

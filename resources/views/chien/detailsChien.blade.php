@@ -159,7 +159,7 @@
     <hr>
 
     <div class="row justify-content-center">
-        <h4 class="blue">Envie de voir à quoi ressemble nos autre chiens ? </h4>
+        <h4 class="blue">Envie de voir à quoi ressemble nos autres chiens ? </h4>
     </div>
 
     <br>

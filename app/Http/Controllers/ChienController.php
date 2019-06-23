@@ -190,7 +190,7 @@ class ChienController extends Controller
 
 
 
-        $chiens_rdm = Chien::orderByRaw('RAND()')->take(4)->get();
+        $chiens_rdm = Chien::where([['own', '=', 1], ['id', '!=', $id]])->orderByRaw('RAND()')->take(4)->get();
 
 
         foreach ($chiens_rdm as $c) {

@@ -4,7 +4,7 @@
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Acceuil</a></li>
+            <li class="breadcrumb-item"><a href="/">Accueil</a></li>
 
             @if($chiens[0]->sex == 1 && $chiens[0]->adult == 1 && $chiens[0]->own == 1)
                 <li class="breadcrumb-item active" aria-current="page">Nos mâles</li>

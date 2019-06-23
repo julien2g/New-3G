@@ -3,7 +3,7 @@
   array (
     'name' => 'Élevage de la Légende Asturienne',
     'env' => 'local',
-    'debug' => true,
+    'debug' => false,
     'url' => 'http://localhost',
     'timezone' => 'UTC',
     'locale' => 'en',
@@ -208,17 +208,17 @@
       'sqlite' => 
       array (
         'driver' => 'sqlite',
-        'database' => 'g',
+        'database' => 'u599265756_new3g',
         'prefix' => '',
       ),
       'mysql' => 
       array (
         'driver' => 'mysql',
-        'host' => '127.0.0.1',
+        'host' => 'sql127.main-hosting.eu',
         'port' => '3306',
-        'database' => 'g',
-        'username' => 'root',
-        'password' => 'root',
+        'database' => 'u599265756_new3g',
+        'username' => 'u599265756_new3g',
+        'password' => 'CRtXZazCD4yIsWEjjV',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -229,11 +229,11 @@
       'pgsql' => 
       array (
         'driver' => 'pgsql',
-        'host' => '127.0.0.1',
+        'host' => 'sql127.main-hosting.eu',
         'port' => '3306',
-        'database' => 'g',
-        'username' => 'root',
-        'password' => 'root',
+        'database' => 'u599265756_new3g',
+        'username' => 'u599265756_new3g',
+        'password' => 'CRtXZazCD4yIsWEjjV',
         'charset' => 'utf8',
         'prefix' => '',
         'schema' => 'public',
@@ -242,11 +242,11 @@
       'sqlsrv' => 
       array (
         'driver' => 'sqlsrv',
-        'host' => '127.0.0.1',
+        'host' => 'sql127.main-hosting.eu',
         'port' => '3306',
-        'database' => 'g',
-        'username' => 'root',
-        'password' => 'root',
+        'database' => 'u599265756_new3g',
+        'username' => 'u599265756_new3g',
+        'password' => 'CRtXZazCD4yIsWEjjV',
         'charset' => 'utf8',
         'prefix' => '',
       ),

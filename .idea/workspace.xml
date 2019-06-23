@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e46944e3-a92e-4d9c-960f-31e71fa83dcd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChienController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChienController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/chien.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/chien.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chien/detailsChien.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/chien/listChiens.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chien/listChiens.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/chien/listChiots.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chien/listChiots.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/78/6d/786de66ad31eaadc5b64816239d42bb639437a53" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/f2/2e/f22e220aa1fcbd1cfc6e022593ca4c01b04a76e3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/B2Y0mME9FkDtBaAkVWEaS3zM2EzWvcM0Jv3DBIo6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/IoUot6GmN6pQHt92B97bIAAekbKWw18NfZFVFVvu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/617cc81d6e4acc4fbf599f5e7e204b20c952569e.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/617cc81d6e4acc4fbf599f5e7e204b20c952569e.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/6b5e6c81606cc1eedb86405781425c66309a33f2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6b5e6c81606cc1eedb86405781425c66309a33f2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/e28d62392174c9de5e060066602318d3eccbc1f1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e28d62392174c9de5e060066602318d3eccbc1f1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
-    </list>
+    <list default="true" id="e46944e3-a92e-4d9c-960f-31e71fa83dcd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +46,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="12" />
-          <entry key="env" value="12" />
+          <entry key="env" value="13" />
           <entry key="env E" value="3" />
           <entry key="example" value="3" />
           <entry key="gitignore" value="13" />
@@ -82,7 +64,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="12" />
+          <entry key=".env file" value="13" />
           <entry key="Blade" value="138" />
           <entry key="CSS" value="12" />
           <entry key="Image" value="4" />
@@ -101,7 +83,7 @@
           <entry key="env" value="144" />
           <entry key="gitignore" value="22" />
           <entry key="htaccess" value="11" />
-          <entry key="php" value="30156" />
+          <entry key="php" value="30161" />
           <entry key="scss" value="24" />
           <entry key="txt" value="15" />
           <entry key="vue" value="23" />
@@ -111,7 +93,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="144" />
-          <entry key="Blade" value="18621" />
+          <entry key="Blade" value="18626" />
           <entry key="CSS" value="677" />
           <entry key="PHP" value="11535" />
           <entry key="PLAIN_TEXT" value="48" />
@@ -133,6 +115,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/chien.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -196,20 +187,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/about.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="125" column="22" lean-forward="true" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/explaination.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2265">
-              <caret line="151" column="117" selection-start-line="151" selection-start-column="117" selection-end-line="151" selection-end-column="117" />
+            <state relative-caret-position="609">
+              <caret line="137" column="109" selection-start-line="137" selection-start-column="109" selection-end-line="137" selection-end-column="109" />
             </state>
           </provider>
         </entry>
@@ -663,16 +645,15 @@
       <workItem from="1560419731559" duration="3531000" />
       <workItem from="1560822788810" duration="6331000" />
       <workItem from="1560856788914" duration="1320000" />
-      <workItem from="1561290391343" duration="2924000" />
+      <workItem from="1561290391343" duration="3258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251332000" />
+    <option name="totallyTimeSpent" value="251666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18559219" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -688,7 +669,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.497558" visible="true" weight="0.11632653" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.497558" visible="true" weight="0.30408162" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502442" side_tool="true" weight="0.18979591" />
       <window_info anchor="bottom" id="File Transfer" order="11" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -954,13 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/addAlbum.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
@@ -1040,8 +1014,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/about.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="125" column="22" lean-forward="true" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="22" />
+        <state relative-caret-position="609">
+          <caret line="137" column="109" selection-start-line="137" selection-start-column="109" selection-end-line="137" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
         </state>
       </provider>
     </entry>

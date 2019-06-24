@@ -54,7 +54,7 @@ class ChienController extends Controller
     {
         $images = [];
 
-        $chiens = Chien::where('owner', '!=', 0)->get();
+        $chiens = Chien::where([['owner', '!=', 0], ['own', '!=', 1], ['adult', '=', 1]])->get();
 
 
 
@@ -74,7 +74,7 @@ class ChienController extends Controller
 
         $images = [];
 
-        $chiens = Chien::where([['own', '=', $own], ['adult', '=', '0']])->paginate(2);
+        $chiens = Chien::where([['own', '=', $own], ['adult', '=', '0']])->paginate(8);
 
 
         foreach ($chiens as $key => $chien) {

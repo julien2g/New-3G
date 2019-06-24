@@ -110,7 +110,7 @@
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                    aria-expanded="false">Chiots</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="<?php echo e(route('chiot', ['own' => "1"])); ?>">Chiots disponible </a>
+                    <a class="dropdown-item" href="<?php echo e(route('chiot', ['own' => "1"])); ?>">Chiots disponibles </a>
 
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="<?php echo e(route('chiot', ['own' => "0"])); ?>">Chiots nés chez nous</a>
@@ -144,8 +144,7 @@
             
         </ul>
     </div>
-    
-    </br>
+    <br />
     <main class="container">
         <?php echo $__env->yieldContent('content'); ?>
     </main>

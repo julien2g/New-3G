@@ -94,7 +94,7 @@
                 <div class="form-group col-3">
                     <label for="portee">Portée</label>
                     <select id="portee" name="portee" class="form-control">
-                        <option selected value="{{isset($portees) ? $portees->id : ''}}">{{isset($portees) ? $portees[$key]->id : 'Choisir ...'}}</option>
+                        <option selected value="{{isset($chien) ? $chien->id_portee : ''}}">{{isset($chien) ? $chien->id_portee : 'Choisir ...'}}</option>
 
                         @if(isset($parents))
                             @foreach($parents as $key=>$parent)

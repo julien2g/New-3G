@@ -59,24 +59,12 @@
                     <img class="img-thumbnail" src="{{url('public/storage/img/sport.png')}}"
                          alt="Elevage de chiens berger Australien Sud" title="Elevage de chiens berger Australien">
                 </div>
-                <h1 class="page-header center "> Besoin énorme en activités physiques</h1>
+                <h1 class="page-header center "> Besoin d'une bonne activités physiques</h1>
                 <hr>
-
-                <p>Pour être heureux, il a besoin de beaucoup d’exercices. Cette race est donc à éviter pour les
-                    personnes sédentaires. Il est le compagnon idéal lors de randonnées de ski de fond, de VTT,
-                    d’équitation ou de course à pieds. Il peut facilement effectuer des km par semaine sans
-                    problème.</p>
-
-                <p>L’inactivité physique ou mental n’est vraiment pas fait pour le <strong>berger australien</strong>. À
-                    tous les jours,
-                    idéalement plusieurs fois par jour, il aura besoin de son lot d’exercice physique et mental. Les
-                    personnes vivant en appartement qui prévoient adopter cette race devraient fortement songer adopter
-                    une autre race plus adapter à leur situation. Le <strong>berger australien</strong> a besoin de
-                    vastes espaces.</p>
 
                 <h3>Son caractère</h3>
 
-                <p>Très vif et très adapté aux sportifs, le berger australien est renommé pour sa grande rapidité. Il a
+                <p>Vif et adapté aux sportifs, le berger australien est renommé pour sa grande rapidité. Il a
                     toutes les qualités qui en font un excellent gardien de troupeaux qu’ils soient bovins, ovins ou à
                     plumes.</p>
                 <p>Le cani-cross ou l’agility (disciplines sportives), le cavage et la fouille de décombres font

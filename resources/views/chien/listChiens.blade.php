@@ -11,7 +11,7 @@
             @elseif ($chiens[0]->sex == 0 && $chiens[0]->adult == 1 && $chiens[0]->own == 1)
                 <li class="breadcrumb-item active">Nos femelles</li>
             @elseif($chiens[0]->own == 0)
-                <li class="breadcrumb-item active">Mâles exterieur</li>
+                <li class="breadcrumb-item active">Mâle éxterieurs</li>
             @endif
 
         </ol>

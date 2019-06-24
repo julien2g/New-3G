@@ -110,7 +110,7 @@
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                    aria-expanded="false">Chiots</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="{{route('chiot', ['own' => "1"])}}">Chiots disponible </a>
+                    <a class="dropdown-item" href="{{route('chiot', ['own' => "1"])}}">Chiots disponibles </a>
 
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="{{route('chiot', ['own' => "0"])}}">Chiots nés chez nous</a>
@@ -146,24 +146,7 @@
              </li>--}}
         </ul>
     </div>
-    {{-- <nav class=" bottom fixed-bottom navbar navbar-dark bg-primary ">
-         <a class="navbar-brand" href="#">Fixed bottom</a>
-
-         <a class="nav-link dropdown-toggle black" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-            aria-expanded="false">Chiens</a>
-         <div class="dropdown-menu">
-             <a class="dropdown-item"
-                href="{{route('add/chien')}}">Ajouter un chien</a>
-             <div class="dropdown-divider"></div>
-             <a class="dropdown-item"
-                href="{{route('modify/chien')}}">Modifier un chien</a>
-
-
-         </div>
-
-
-     </nav>--}}
-    </br>
+    <br />
     <main class="container">
         @yield('content')
     </main>
